@@ -1,15 +1,15 @@
-
-interface contImgProps {
-  children: React.ReactNode;
+interface ContImgProps {
+  src: string;
   shape: "square" | "circle";
 }
 
-export default function ContImg({ children, shape }: contImgProps) {
+export default function ContImg({ src, shape }: ContImgProps) {
   return (
-    <div className={`w-48 h-48 md:min-w-80 md:h-80 xl:min-w-96 xl:h-96 
+    <div className={`w-48 h-48 sm:w-80 sm:h-80
+      md:w-full md:h-full 
       ${shape === "circle" ? "rounded-full overflow-hidden" : "rounded"}
-    border-2 border-[var(--color-primary)] bg-gradient-to-b  from-[var(--color-secondary)] to-[var(--color-primary)]`}>
-      {children}
+      border-2 border-[var(--color-primary)] bg-gradient-to-b from-[var(--color-secondary)] to-[var(--color-primary)]`}>
+      <img className="w-full h-full object-cover object-center" src={src} alt="Profile Picture" />
     </div>
-  )
+  );
 }
