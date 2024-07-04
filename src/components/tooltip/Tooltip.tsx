@@ -46,15 +46,15 @@ const Tooltip = ({ text, children, position = 'top' }: TooltipProps) => {
   const arrowPosition = () => {
     switch (position) {
       case 'top':
-        return 'left-1/2 -translate-x-1/2 top-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 dark:border-t-yellow-500 border-t-blue-500';
+        return 'left-1/2 -translate-x-1/2 top-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-[var(--color-primary)]';
       case 'bottom':
-        return 'left-1/2 -translate-x-1/2 bottom-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-b-4 dark:border-b-yellow-500 border-b-blue-500';
+        return 'left-1/2 -translate-x-1/2 bottom-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-b-4 border-b-[var(--color-primary)]';
       case 'left':
-        return 'left-full top-1/2 transform -translate-y-1/2 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 dark:border-l-yellow-500 border-l-blue-500';
+        return 'left-full top-1/2 transform -translate-y-1/2 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-[var(--color-primary)]';
       case 'right':
-        return 'right-full top-1/2 transform -translate-y-1/2 border-t-4 border-t-transparent border-b-4 border-b-transparent border-r-4 dark:border-r-yellow-500 border-r-blue-500';
+        return 'right-full top-1/2 transform -translate-y-1/2 border-t-4 border-t-transparent border-b-4 border-b-transparent border-r-4  border-r-[var(--color-primary)]';
       default:
-        return 'left-1/2 -translate-x-1/2 top-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 dark:border-t-yellow-500 border-t-blue-500';
+        return 'left-1/2 -translate-x-1/2 top-full border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4  border-t-[var(--color-primary)]';
     }
   };
 
@@ -70,7 +70,7 @@ const Tooltip = ({ text, children, position = 'top' }: TooltipProps) => {
       {visible && (
         <div
           ref={tooltipRef}
-          className={`absolute ${tooltipPosition()} px-2 py-1 w-auto text-xs text-center rounded text-white bg-gray-800 border-2 dark:border-yellow-500 border-blue-500`}
+          className={`absolute ${tooltipPosition()} px-2 py-1 w-auto text-xs text-center rounded text-[var(--color-text)] bg-[var(--color-background)] border-2 border-[var(--color-primary)]`}
           style={{ zIndex: 9999 }}
         >
           {text}
