@@ -42,7 +42,7 @@ const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text)]" }: Ico
         break;
       case 'firebase':
         setIconoSize('w-5 h-5 md:w-8 md:h-8');
-        setIcono(<span className={`w-full h-full icon-[ri--firebase-fill`}></span>)
+        setIcono(<span className={`w-full h-full icon-[ri--firebase-fill]`}></span>)
         break;
       case 'git':
         setIconoSize('w-5 h-5 md:w-8 md:h-8');
@@ -173,6 +173,14 @@ const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text)]" }: Ico
       case 'dialogflow':
         setIconoSize('w-4 h-4 md:w-8 md:h-8');
         setIcono(<span className={`w-full h-full icon-[simple-icons--dialogflow]`}></span>);
+        break
+      case 'npm':
+        setIconoSize('w-4 h-4 md:w-8 md:h-8');
+        setIcono(<span className={`w-full h-full icon-[ri--npmjs-line]`}></span>);
+        break
+      case 'eslint':
+        setIconoSize('w-4 h-4 md:w-8 md:h-8');
+        setIcono(<span className={`w-full h-full icon-[mdi--eslint]`}></span>);
         break
 
       default:
