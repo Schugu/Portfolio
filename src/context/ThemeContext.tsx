@@ -88,6 +88,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-accent1: ${themeColors.accent1};
             --color-accent2: ${themeColors.accent2};
             --color-accent3: ${themeColors.accent3};
+            --color-colorOpacity: ${themeColors.colorOpacity};
+
           }
         `}
       </style>

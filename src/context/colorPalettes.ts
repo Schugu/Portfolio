@@ -25,6 +25,7 @@ export const darkThemeColors = {
   accent1: '#18263E',
   accent2: '#060e1c',
   accent3: '#637591',
+  colorOpacity: "#f1e1cf18",
 };
 
 export const lightThemeColors = {
@@ -55,4 +56,5 @@ export const lightThemeColors = {
   accent1: '#18263E',
   accent2: '#060e1c',
   accent3: '#637591',
+  colorOpacity: "#2195f318",
 };
