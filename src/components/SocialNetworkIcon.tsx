@@ -36,14 +36,12 @@ const SocialNetworkIcon = ({ socialNetwork, link, tabIndex }: SocialNetworkProps
 
   return (
     <a href={link} target="_blank"
-      className="flex justify-center items-center p-1 rounded-xl
-                border-2 border-transparent shadow
-                transition-colors duration-100 ease-in-out
-                hover:border-AZUL hover:shadow-AZUL hover:bg-AZUL hover:bg-opacity-10  border-LIGHT-AzulOscuro border-opacity-10 text-LIGHT-AzulClaro hover:text-LIGHT-AzulOscuro
-                dark:hover:border-AMARILLO dark:hover:shadow-AMARILLO dark:hover:bg-white dark:hover:bg-opacity-10 dark:border-CREMA dark:border-opacity-10 dark:text-CREMA-dark dark:hover:text-CREMA
-                "
-    tabIndex={tabIndex} aria-label={`${socialNetwork}`}
-                >
+      className={`flex justify-center items-center p-1 rounded-xl transition-colors duration-100 ease-in-out
+                border-2 border-transparent hover:border-[var(--color-primary)] shadow  hover:shadow-[var(--color-primary)]
+                hover:bg-white hover:bg-opacity-10 border-opacity-10 text-[var(--color-text)] hover:text-[var(--color-text)]
+                `}  
+      tabIndex={tabIndex} aria-label={`${socialNetwork}`}
+    >
       <span className={`w-8 h-8 md:w-10 md:h-10 ${icono}`}></span>
     </a>
   );
