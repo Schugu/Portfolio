@@ -1,9 +1,18 @@
 {
   "fullname": "Leandro Daniel Schugurensky",
-  "descript": "",
-  "hobbies": "",
-  "dev": "Desarollador Front-end",
-  "titles": [],
+  "aboutMe": [
+    "¡Hola a todos! Soy Leandro Daniel Schugurensky, tengo 23 años y cuento con experiencia en roles administrativos. Me destaco en tareas tecnológicas y como programador Front-End, especializado en HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git y GitHub. También tengo experiencia en el manejo de bases de datos como MongoDB y Firebase.",
+    "Estoy comprometido con el aprendizaje continuo y en la mejora constante de mis habilidades como desarrollador. Mi objetivo es seguir creciendo profesionalmente en el campo del desarrollo web, aportando mis conocimientos y habilidades para crear aplicaciones web robustas y eficientes.",
+    "Si buscas un desarrollador comprometido y entusiasta para tu equipo, no dudes en contactarme."
+  ],
+  "hobbies": [
+    "¡Hola a todos! Soy Leandro Daniel Schugurensky, tengo 23 años y cuento con experiencia en roles administrativos. Me destaco en tareas tecnológicas y como programador Front-End, especializado en HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git y GitHub. También tengo experiencia en el manejo de bases de datos como MongoDB y Firebase.",
+    "Estoy comprometido con el aprendizaje continuo y en la mejora constante de mis habilidades como desarrollador. Mi objetivo es seguir creciendo profesionalmente en el campo del desarrollo web, aportando mis conocimientos y habilidades para crear aplicaciones web robustas y eficientes.",
+    "Si buscas un desarrollador comprometido y entusiasta para tu equipo, no dudes en contactarme."
+  ],
+  "titles": [
+    "Desarollador Front-end"
+  ],
   "years": "23 años",
   "nationality": "Argentina",
   "linksSocialNetworks": {
@@ -34,6 +43,15 @@
     ],
     "backEnd": [
       "Node.js"
+    ],
+    "tools": [
+      "Google Suite",
+      "Microsoft Office",
+      "NPM",
+      "Eslint"
+    ],
+    "ides": [
+      "Visual Studio Code"
     ]
   },
   "profilePicture": "/profile/fotoDePerfil.png",

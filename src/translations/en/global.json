@@ -15,8 +15,13 @@
       "frontEnd": "Front-End Development",
       "dataBase": "Database",
       "versionControl": "Version Control",
-      "backEnd": "Back-End Development"
+      "backEnd": "Back-End Development",
+      "languages": "Languages",
+      "tools": "Tools",
+      "database": "Databases",
+      "ides": "IDEs"
     },
+    "aboutMe": "About me",
     "hobbies": "Hobbies"
   },
   "projects": {

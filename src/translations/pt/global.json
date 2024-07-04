@@ -14,9 +14,14 @@
       "title": "Habilidades",
       "frontEnd": "Desenvolvimento Front-End",
       "dataBase": "Base de Dados",
-      "versionControl": "Controle de versões",
-      "backEnd": "Desenvolvimento Back-End"
+      "versionControl": "Controle de Versões",
+      "backEnd": "Desenvolvimento Back-End",
+      "languages": "Linguagens",
+      "tools": "Ferramentas",
+      "database": "Bases de Dados",
+      "ides": "IDEs"
     },
+    "aboutMe": "Sobre Mim",
     "hobbies": "Passatempos"
   },
   "projects": {

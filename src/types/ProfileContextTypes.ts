@@ -1,11 +1,10 @@
 export interface ProfileType {
   fullname: string;
-  descript?: string;
-  hobbies?: string;
-  dev: string;
   titles?: string[];
   years: string;
   nationality: string;
+  aboutMe?: string[];
+  hobbies?: string[];
   linksSocialNetworks?: {
     Github: string;
     Linkedin: string;
