@@ -114,7 +114,7 @@ const config = {
           },
           background: {
             light: '#FAFCFF',
-            DEFAULT: '#F5FAFF',
+            DEFAULT: '#ebf1fb',
           },
           text: {
             light: '#55657E',
