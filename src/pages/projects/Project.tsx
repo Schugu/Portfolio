@@ -104,7 +104,7 @@ export default function Project() {
           </article>
 
           <article className='w-full flex flex-col gap-4'>
-            <p tabIndex={20} className="w-full text-center text-xl md:text-2xl text-AZUL-dark dark:text-AMARILLO">{t("global:projects.technologies")}:</p>
+            <p tabIndex={20} className="w-full text-center text-xl md:text-2xl text-[var(--color-primary)]">{t("global:projects.technologies")}:</p>
             <div className="flex gap-2 flex-wrap justify-center">
               {project.techs.map((tech, index) => (
                 <Techs key={tech} tech={tech} tabIndex={index + 20} />
@@ -142,7 +142,7 @@ export default function Project() {
             <article className='w-full flex flex-wrap justify-center items-center'>
               {[...Array(project.cantScreenshots[device])].map((_, index) => (
                 <div key={index} tabIndex={index + 104} className={`p-1 ${device === 'cellphone' ? 'w-full sm:w-1/4' : ''} ${device === 'tablet' ? 'w-full sm:w-1/3' : ''} ${device === 'desktop' ? 'w-full sm:w-1/2' : ''}`}>
-                  <img className='w-full h-auto border-2 border-AMARILLO dark:border-AZUL' src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`} alt={`Screenshot ${index + 1}`} />
+                  <img className='w-full h-auto border-2 border-[var(--color-border)]' src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`} alt={`Screenshot ${index + 1}`} />
                 </div>
               ))}
             </article>
