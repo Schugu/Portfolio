@@ -70,7 +70,7 @@ const Tooltip = ({ text, children, position = 'top' }: TooltipProps) => {
       {visible && (
         <div
           ref={tooltipRef}
-          className={`absolute ${tooltipPosition()} px-2 py-1 w-auto text-xs text-center rounded text-[var(--color-text)] bg-[var(--color-background)] border-2 border-[var(--color-primary)]`}
+          className={`absolute ${tooltipPosition()} px-2 py-1 w-auto text-xs text-center rounded text-[var(--color-text-light)] bg-[var(--color-background-dark)] border-2 border-[var(--color-primary)]`}
           style={{ zIndex: 9999 }}
         >
           {text}
