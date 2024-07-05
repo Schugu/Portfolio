@@ -21,10 +21,10 @@ const Projects: React.FC = () => {
             <div className={`flex flex-col gap-4 pb-12 
               ${Object.keys(dataProjects.approaches).length > 1
                 ? index === Object.keys(dataProjects.approaches).length - 1
-                  ? "" : "border-b-2 border-AZUL dark:border-AMARILLO"
+                  ? "" : "border-b-2 border-[var(--color-primary)]"
                 : ""}`}
               key={approach + index}>
-              <p className="text-3xl font-bold text-AZUL dark:text-AMARILLO">{approach}</p>
+              <p className="text-3xl font-bold text-[var(--color-primary)]">{approach}</p>
               <section className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-3">
                 {projects.map((project) => (
                   <Card key={"project" + project.id} project={project} />
