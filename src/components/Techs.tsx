@@ -60,6 +60,7 @@ export default function Techs({ tech, tabIndex }: TechsProps) {
 
   return (
     <img
+      className="h-6 md:h-8"
       src={src}
       alt={alt}
       tabIndex={tabIndex}
