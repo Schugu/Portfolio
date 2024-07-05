@@ -63,21 +63,23 @@ export default function Project() {
   return (
     <SectionCard sectionTitle={`${t("global:projects.section")}["${project?.title ?? t("global:projects.projectNotFound")}"]`}>
       <div className="w-full h-full flex flex-col gap-2 p-2">
-        <section className="w-full flex flex-wrap justify-center gap-4 p-4 rounded-lg dark:bg-gray-800 bg-AZUL bg-opacity-10">
+        <section className="w-full flex flex-wrap justify-center gap-4 p-4 rounded-lg bg-[var(--color-background)]">
           <article className='w-full flex flex-col'>
             <div className="w-full flex justify-between items-center">
               <Tooltip text={t("global:projects.back")} position='right'>
                 <Link to='/projects'
                   aria-label={t("global:projects.back")}
                   tabIndex={6}
-                  className='flex justify-center items-center border-2 border-transparent py-1 px-1.5 rounded hover:text-AZUL-dark hover:border-AZUL-dark hover:bg-AZUL hover:bg-opacity-10 dark:hover:border-AMARILLO dark:hover:text-AMARILLO dark:hover:bg-AMARILLO dark:hover:bg-opacity-10'
+                  className='flex justify-center items-center border-2 border-transparent py-1 px-1.5 rounded 
+                  hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
                 >
                   <span className="w-7 h-7 md:w-9 md:h-9 icon-[tdesign--enter]" />
                 </Link>
               </Tooltip>
               {project.linkGithub &&
                 <a
-                  className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 hover:text-AZUL-dark border-DARK-BG-light hover:border-AZUL-dark hover:bg-AZUL hover:bg-opacity-10 dark:border-CREMA dark:hover:border-AMARILLO dark:hover:text-AMARILLO dark:hover:bg-AMARILLO dark:hover:bg-opacity-10'
+                  className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
+                  hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
                   href={project.linkGithub}
                   target="_blank"
                   aria-label={t("global:projects.viewRepository")}
@@ -90,7 +92,7 @@ export default function Project() {
             </div>
 
             <div className='w-full flex flex-col gap-6'>
-              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-AZUL-dark dark:border-AMARILLO mb-2" tabIndex={8}>{project.title}</p>
+              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border)] mb-2" tabIndex={8}>{project.title}</p>
               <p tabIndex={9} className="indent-8 text-lg md:text-xl">{t(`projects:approaches.${project.approach}.${projectIndex}.description`)}</p>
 
               {project.moreInfo.map((_, pIndex) => (
