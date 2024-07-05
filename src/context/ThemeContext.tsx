@@ -80,8 +80,10 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-secondary-dark: ${themeColors.secondary.dark};
             --color-background: ${themeColors.background.DEFAULT};
             --color-background-light: ${themeColors.background.light};
+            --color-background-dark: ${themeColors.background.dark};
             --color-text: ${themeColors.text.DEFAULT};
             --color-text-dark: ${themeColors.text.dark};
+            --color-text-light: ${themeColors.text.light};
             --color-border: ${themeColors.border.DEFAULT};
             --color-border-light: ${themeColors.border.light};
             --color-border-dark: ${themeColors.border.dark};

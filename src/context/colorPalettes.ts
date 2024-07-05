@@ -11,9 +11,11 @@ export const darkThemeColors = {
   },
   background: {
     DEFAULT: "#060e1c",
-    light: "#0e192b"
+    light: "#0e192b",
+    dark: "#0c1523"
   },
   text: {
+    light: '#fff7ed',
     DEFAULT: '#f1e1cf',
     dark: '#ab9f92',
   },
@@ -42,10 +44,11 @@ export const lightThemeColors = {
   background: {
     light: '#FAFCFF',
     DEFAULT: '#ebf1fb',
+    dark: '#1A202C'
   },
   text: {
-    light: '#55657E',
-    DEFAULT: '#55657E', 
+    light: '#e1ecfa',
+    DEFAULT: '#55657e', 
     dark: '#16202F',
   },
   border: {
