@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Select, { StylesConfig } from 'react-select';
-import { useTheme } from "@/context/ThemeContext.tsx";
 
-type OptionType = {
+interface OptionType {
   value: string;
-  label: React.ReactNode;
-};
+  label: JSX.Element;
+}
 
 const ChangeLanguage: React.FC = () => {
   const { i18n } = useTranslation();
-  const { theme } = useTheme();
 
   const changeLanguage = (selectedOption: OptionType | null) => {
     if (selectedOption) {
@@ -21,46 +19,69 @@ const ChangeLanguage: React.FC = () => {
     }
   };
 
-  const options: OptionType[] = [
-    { value: 'es', label: <div className='text-LIGHT-T-dark dark:text-CREMA flex justify-start items-center gap-1'><p className='text-xl'>ES</p><span className="w-7 h-7 icon-[openmoji--flag-argentina]" /></div> },
-    { value: 'en', label: <div className='text-LIGHT-T-dark dark:text-CREMA flex justify-start items-center gap-1'><p className='text-xl'>EN</p><span className="w-7 h-7 icon-[openmoji--flag-united-states]" /></div> },
-    { value: 'pt', label: <div className='text-LIGHT-T-dark dark:text-CREMA flex justify-start items-center gap-1'><p className='text-xl'>PT</p><span className="w-7 h-7 icon-[openmoji--flag-brazil]" /></div> }
+  const languageArrays = [
+    { value: 'es', icon: 'w-7 h-7 icon-[openmoji--flag-argentina]' },
+    { value: 'en', icon: 'w-7 h-7 icon-[openmoji--flag-united-states]' },
+    { value: 'pt', icon: 'w-7 h-7 icon-[openmoji--flag-brazil]' }
   ];
+
+  const options: OptionType[] = languageArrays.map(lang => ({
+    value: lang.value,
+    label: (
+      <div className='flex justify-start items-center gap-1'>
+        <p className='text-xl'>{lang.value.toUpperCase()}</p>
+        <span className={`${lang.icon}`} />
+      </div>
+    )
+  }));
 
   const customStyles: StylesConfig<OptionType, false> = {
     control: (provided, state) => ({
       ...provided,
+      color: "var(--color-text)",
       cursor: 'pointer',
-      backgroundColor: `${theme === 'dark' ? '#060e1c' : '#EBF1FB'}`,
-      border: `2px solid ${state.isFocused ? theme === 'dark' ? '#ffcc50' : '#2196f3' : 'transparent'}`,
+      backgroundColor: "var(--color-background)",
+      border: `2px solid ${state.isFocused ? 'var(--color-primary)' : 'transparent'}`,
       fontSize: '1.25rem',
       boxShadow: 'none',
       '&:hover': {
-        backgroundColor: `${theme === 'dark' ? '#16202F' : '#D8E2F3'}`,
-        border: `2px solid ${theme === 'dark' ? '#ffcc50' : '#2196f3'}`,
+        backgroundColor: "var(--color-background-light)",
+        border: "2px solid var(--color-primary)",
+      }
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "var(--color-text)",
+    }),
+    indicatorSeparator: (provided) => ({
+      ...provided,
+      backgroundColor: "var(--color-text)" 
+    }),
+    dropdownIndicator: (provided, state) => ({
+      ...provided,
+      color: state.isFocused ? "var(--color-primary)" : "var(--color-text)", 
+      '&:hover': {
+        color: "var(--color-primary)"
       }
     }),
     option: (provided, state) => ({
       ...provided,
+      color: "var(--color-text)",
       cursor: 'pointer',
       display: state.isSelected ? 'none' : 'block',
-      backgroundColor: state.isSelected ? theme === 'dark' ? '#16202F' : '#D8E2F3' : 'transparent',
-      color: `${theme === 'dark' ? '#f1e1cf' : '#16202F'}`,
+      backgroundColor: state.isSelected ? 'var(--color-primary)' : 'transparent',
       '&:hover': {
-        backgroundColor: `${theme === 'dark' ? '#16202F' : '#D8E2F3'}`,
-      },
-      '&:active': {
-        backgroundColor: `${theme === 'dark' ? '#16202F' : '#D8E2F3'}`,
+        backgroundColor: "var(--color-background-light)",
       }
     }),
     menu: (provided) => ({
       ...provided,
-      color: `${theme === 'dark' ? '#f1e1cf' : '#16202F'}`,
-      backgroundColor: `${theme === 'dark' ? '#060e1c' : '#EBF1FB'}`,
+      color: "var(--color-text)",
+      backgroundColor: "var(--color-background)",
       borderRadius: '5px',
-      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 0 4px var(--color-primary)',
       cursor: 'pointer',
-      border: `2px solid ${theme === 'dark' ? '#ffcc50' : '#2196f3'}`,
+      border: "2px solid var(--color-primary)",
     }),
   };
 
