@@ -81,17 +81,20 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-background: ${themeColors.background.DEFAULT};
             --color-background-light: ${themeColors.background.light};
             --color-background-dark: ${themeColors.background.dark};
+            --color-background-both: ${themeColors.background.both};
             --color-text: ${themeColors.text.DEFAULT};
             --color-text-dark: ${themeColors.text.dark};
             --color-text-light: ${themeColors.text.light};
+            --color-text-both: ${themeColors.text.both};
             --color-border: ${themeColors.border.DEFAULT};
             --color-border-light: ${themeColors.border.light};
             --color-border-dark: ${themeColors.border.dark};
+            --color-border-complementary: ${themeColors.border.complementary};
             --color-accent1: ${themeColors.accent1};
             --color-accent2: ${themeColors.accent2};
             --color-accent3: ${themeColors.accent3};
             --color-colorOpacity: ${themeColors.colorOpacity};
-
+            --color-primaryOpacity: ${themeColors.primaryOpacity};
           }
         `}
       </style>
