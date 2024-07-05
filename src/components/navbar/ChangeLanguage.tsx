@@ -40,7 +40,7 @@ const ChangeLanguage: React.FC = () => {
       ...provided,
       color: "var(--color-text)",
       cursor: 'pointer',
-      backgroundColor: "var(--color-background)",
+      backgroundColor: "var(--color-background-dark)",
       border: `2px solid ${state.isFocused ? 'var(--color-primary)' : 'transparent'}`,
       fontSize: '1.25rem',
       boxShadow: 'none',
