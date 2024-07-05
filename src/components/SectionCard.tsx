@@ -11,8 +11,8 @@ export default function SectionCard({ sectionTitle, children }: SectionCardProps
 
       <article className="my-6 w-full md:w-11/12 md:pt-4 md:pr-4 md:pb-6 md:pl-7 p-2 
       rounded-md border-2 shadow 
-      bg-[var(--color-background)]
-      border-[var(--color-secondary)] shadow-[var(--color-secondary)]">
+      bg-[var(--color-background-dark)]
+      border-[var(--color-border)] shadow-[var(--color-border)]">
 
         <TagOpen section={sectionTitle} />
 

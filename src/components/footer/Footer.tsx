@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full min-h-10 p-2 gap-2 flex flex-wrap items-center justify-center
-    bg-[var(--color-background)] text-[var(--color-text)]">
+    bg-[var(--color-background-dark)] text-[var(--color-text)]">
       <p className="text-center">{t("global:footer.template")} Leandro Daniel Schugurensky</p>
       <Tooltip text='Github'>
         <a href="https://github.com/Schugu" target="_blank"
