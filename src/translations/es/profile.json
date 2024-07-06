@@ -64,7 +64,7 @@
         "Pasantía laboral (8 meses) en el marco del programa E.T.P (Entrenamiento Para el Trabajo Público). Desempeño de tareas administrativas: carga y digitalización de expedientes, carga de base de datos, entre otras."
       ],
       "tasks": "",
-      "linkDescription": ""
+      "infoLink": ""
     },
     {
       "title": "Administrativo",
@@ -77,7 +77,26 @@
         "Desempeño de tareas administrativas: carga y digitalización de expedientes, carga de base de datos, entre otras."
       ],
       "tasks": "",
-      "linkDescription": ""
+      "infoLink": ""
+    },
+    {
+      "title": "Desarrollador de Videojuegos",
+      "company": "SuSTI - Subsecretaría de Sistemas y Tecnologías de la Información",
+      "date": "Feb. 2023 - Actualidad",
+      "modality": "Presencial - Jornada Parcial",
+      "workplace": "Corrientes, Argentina",
+      "country": "Argentina",
+      "description": [
+        "La SuSTI es un ente gubernamental dependiente del Ministerio de Hacienda de la Provincia de Corrientes. Nuestro objetivo es exportar la cultura correntina a través de los videojuegos y contribuir a la sociedad con soluciones didácticas."
+      ],
+      "tasks": [
+        "Desarrollar videojuegos 2D, 3D y de Realidad Virtual en Unity con .NET C#.",
+        "Redactar informes tipo: Game Concept, Game Treatment y Game Design Document (GDD).",
+        "Operar y realizar mantenimiento de impresoras 3D.",
+        "Liderar equipos de desarrollo utilizando metodología Kanban.",
+        "Organizar y gestionar equipos de atención al público y logística para eventos."
+      ],
+      "infoLink": "ola"
     }
   ],
   "certificates": [
