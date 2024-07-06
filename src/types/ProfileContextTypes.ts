@@ -28,7 +28,7 @@ export interface ProfileType {
     country: string;
     description: string[];
     tasks?: string[];
-    linkDescription: string;
+    infoLink?: string;
   }[];
   certificates?: string[];
   textContact?: string[];

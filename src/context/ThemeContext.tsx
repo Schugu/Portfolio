@@ -75,9 +75,11 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-primary: ${themeColors.primary.DEFAULT};
             --color-primary-light: ${themeColors.primary.light};
             --color-primary-dark: ${themeColors.primary.dark};
+            --color-primary-extraLight: ${themeColors.primary.extraLight};
             --color-secondary: ${themeColors.secondary.DEFAULT};
             --color-secondary-light: ${themeColors.secondary.light};
             --color-secondary-dark: ${themeColors.secondary.dark};
+            --color-secondary-both: ${themeColors.secondary.both};
             --color-background: ${themeColors.background.DEFAULT};
             --color-background-light: ${themeColors.background.light};
             --color-background-dark: ${themeColors.background.dark};
