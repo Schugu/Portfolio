@@ -36,9 +36,9 @@ export default function Contact() {
 
   return (
     <SectionCard sectionTitle={t("global:contact.section")}>
-      <section className='flex gap-10'>
+      <section className='flex flex-col md:flex-row gap-2 md:gap-10'>
         <form ref={formRef} onSubmit={onSubmit}
-          className="w-1/2 flex flex-col gap-6 justify-start items-center">
+          className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-center order-2 md:order-1">
           <section className="w-full flex flex-col gap-1">
             <label
               htmlFor="website-admin"
@@ -142,7 +142,7 @@ export default function Contact() {
           </button>
         </form>
 
-        <article className='w-1/2 flex flex-col items-center gap-2'>
+        <article className='w-full md:w-1/2 flex flex-col items-center gap-2  order-1 md:order-2'>
           <div className='flex flex-col items-center gap-2'>
             <p className='text-center text-2xl text-AZUL dark:text-AMARILLO'>{t("global:contact.titleText")}</p>
 
@@ -152,7 +152,7 @@ export default function Contact() {
             {
               !loading && dataProfile && (
                 dataProfile.textContact?.map((_, index) => (
-                  <p className='text-balance text-xl' key={"paragraph" + index}>
+                  <p className='text-center md:text-left text-balance text-xl' key={"paragraph" + index}>
                     {t(`profile:textContact.${index}`)}
                   </p>
                 )))
