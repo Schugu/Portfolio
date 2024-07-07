@@ -19,7 +19,7 @@ export default function Education() {
                 className="w-full">
                 <img
                   className='transform  hover:scale-110 transition duration-300
-                border-2 border-AMARILLO-light dark:border-AZUL rounded overflow-hidden'
+                border-2 border-[var(--color-border-complementary)] rounded overflow-hidden'
                   src={`/profile/education/${index + 1}.jpg`}
                   alt={`Screenshot ${index + 1}`}
                 />
