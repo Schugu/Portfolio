@@ -24,18 +24,6 @@ export default function Project() {
   const [projectIndex, setProjectIndex] = useState<number>(-1);
   const [device, setDevice] = useState<DeviceType>('desktop');
 
-  const [showModal, setShowModal] = useState(false);
-  const [modalImgUrl, setModalImgUrl] = useState('');
-
-  const handleImageClick = (imgUrl) => {
-    setModalImgUrl(imgUrl);
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
-
   useEffect(() => {
     if (dataProjects && dataProjects.approaches && projectId) {
       const allProjects = Object.values(dataProjects.approaches).reduce((acc, projects) => acc.concat(projects), []);
@@ -154,32 +142,33 @@ export default function Project() {
             </article>
 
 
-            <div className="w-full flex flex-wrap justify-center items-center">
-              {[...Array(project.cantScreenshots[device])].map((_, index) => (
-                <div
-                  key={index}
-                  onClick={() =>
-                    handleImageClick(
-                      `/projects/${project.id}/screenshots/${device}/${index + 1}.png`
-                    )
-                  }
-                  className={`p-1
-                    ${device === 'cellphone' ? 'w-1/4' : ''} 
-                    ${device === 'tablet' ? 'w-1/4' : ''} 
-                    ${device === 'desktop' ? 'w-1/3' : ''}
-                  `}
-                >
-                  <img
-                    className="w-full h-auto border-2 border-[var(--color-border)] cursor-pointer"
-                    src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`}
-                    alt={`Screenshot ${index + 1}`}
-                  />
+            <ImgModal>
+              {handleImageClick => (
+                <div className="w-full flex flex-wrap justify-center items-center">
+                  {[...Array(project.cantScreenshots[device] || 0)].map((_, index) => (
+                    <div
+                      key={index}
+                      onClick={() =>
+                        handleImageClick(
+                          `/projects/${project.id}/screenshots/${device}/${index + 1}.png`
+                        )
+                      }
+                      className={`p-1
+                        ${device === 'cellphone' ? 'w-1/4' : ''} 
+                        ${device === 'tablet' ? 'w-1/4' : ''} 
+                        ${device === 'desktop' ? 'w-1/3' : ''}
+                      `}
+                    >
+                      <img
+                        className="w-full h-auto border-2 border-[var(--color-border)] cursor-pointer"
+                        src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`}
+                        alt={`Screenshot ${index + 1}`}
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
-
-              {/* Modal de Imagen */}
-              <ImgModal isOpen={showModal} onClose={closeModal} imgUrl={modalImgUrl} />
-            </div>
+              )}
+            </ImgModal>
 
 
 
