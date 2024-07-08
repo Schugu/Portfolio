@@ -67,5 +67,9 @@
   },
   "footer": {
     "template": "Template feito por"
+  },
+  "modal": {
+    "close": "Fechar",
+    "link": "Ver mais"
   }
 }

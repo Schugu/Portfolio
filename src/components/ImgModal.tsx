@@ -1,17 +1,19 @@
 import { useState, useEffect, MouseEvent, ReactNode } from 'react';
+import Tooltip from "@/components/tooltip/Tooltip.tsx";
+import { useTranslation } from 'react-i18next';
 
-// Define the interface for ModalData
 interface ModalData {
   imgUrl: string;
   linkToOpen?: string;
 }
 
-// Define the interface for the props
 interface ImgModalProps {
   children: (openModal: (imgUrl: string, linkToOpen?: string) => void) => ReactNode;
 }
 
 const ImgModal: React.FC<ImgModalProps> = ({ children }) => {
+  const { t } = useTranslation(['global']);
+
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState<ModalData>({
     imgUrl: '',
@@ -61,22 +63,26 @@ const ImgModal: React.FC<ImgModalProps> = ({ children }) => {
       {showModal && (
         <div
           className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-90"
-          
+
         >
           <div className="relative w-full h-full max-w-[90%] max-h-[90%]" >
             <div
               className="absolute top-0 right-0 text-[var(--color-primary-extraLight)] text-2xl md:text-6xl
-              flex flex-col items-center"
+              flex flex-col items-center justify-start"
             >
-              <button onClick={handleCloseModal} className='hover:text-[var(--color-primary)]'>
-                <span className="icon-[ion--close-circled]" />
-              </button>
+              <Tooltip position='left' text={t("global:modal.close")}>
+                <button onClick={handleCloseModal} className='hover:text-[var(--color-primary)]'>
+                  <span className="icon-[ion--close-circled]" />
+                </button>
+              </Tooltip>
               {
                 modalData.linkToOpen &&
-                <a href={modalData.linkToOpen} className='hover:text-[var(--color-primary)]'
-                target='_blank' rel='noopener noreferrer'>
-                  <span className="icon-[iconoir--internet]" />
-                </a>
+                <Tooltip position='left' text={t("global:modal.link")}>
+                  <a href={modalData.linkToOpen} className='hover:text-[var(--color-primary)]'
+                    target='_blank' rel='noopener noreferrer'>
+                    <span className="icon-[iconoir--internet]" />
+                  </a>
+                </Tooltip>
               }
             </div>
             <div className="flex justify-center items-center h-full" onClick={handleOutsideClick}>
