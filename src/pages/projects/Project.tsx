@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { ProjectType } from '@/types/ProfileContextTypes.ts';
 import ViewRepository from "@/components/buttons/ViewRepository.tsx";
 import ViewDemo from "@/components/buttons/ViewDemo.tsx";
-
+import ImgModal from "@/components/ImgModal.tsx"
 type DeviceType = 'cellphone' | 'tablet' | 'desktop';
 
 type NewProjectType = ProjectType & {
@@ -23,6 +23,18 @@ export default function Project() {
   const [project, setProject] = useState<NewProjectType | null>(null);
   const [projectIndex, setProjectIndex] = useState<number>(-1);
   const [device, setDevice] = useState<DeviceType>('desktop');
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalImgUrl, setModalImgUrl] = useState('');
+
+  const handleImageClick = (imgUrl) => {
+    setModalImgUrl(imgUrl);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
     if (dataProjects && dataProjects.approaches && projectId) {
@@ -141,13 +153,36 @@ export default function Project() {
               }
             </article>
 
-            <article className='w-full flex flex-wrap justify-center items-center'>
+
+            <div className="w-full flex flex-wrap justify-center items-center">
               {[...Array(project.cantScreenshots[device])].map((_, index) => (
-                <div key={index} tabIndex={index + 104} className={`p-1 ${device === 'cellphone' ? 'w-full sm:w-1/4' : ''} ${device === 'tablet' ? 'w-full sm:w-1/3' : ''} ${device === 'desktop' ? 'w-full sm:w-1/2' : ''}`}>
-                  <img className='w-full h-auto border-2 border-[var(--color-border)]' src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`} alt={`Screenshot ${index + 1}`} />
+                <div
+                  key={index}
+                  onClick={() =>
+                    handleImageClick(
+                      `/projects/${project.id}/screenshots/${device}/${index + 1}.png`
+                    )
+                  }
+                  className={`p-1
+                    ${device === 'cellphone' ? 'w-1/4' : ''} 
+                    ${device === 'tablet' ? 'w-1/3' : ''} 
+                    ${device === 'desktop' ? 'w-1/2' : ''}
+                  `}
+                >
+                  <img
+                    className="w-full h-auto border-2 border-[var(--color-border)] cursor-pointer"
+                    src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`}
+                    alt={`Screenshot ${index + 1}`}
+                  />
                 </div>
               ))}
-            </article>
+
+              {/* Modal de Imagen */}
+              <ImgModal isOpen={showModal} onClose={closeModal} imgUrl={modalImgUrl} />
+            </div>
+
+
+
           </section>
         )}
       </div>
