@@ -12,6 +12,7 @@ export const darkThemeColors = {
     both: "#2196f3"
   },
   background: {
+    extraLight: "#374151",
     light: "#0e192b",
     DEFAULT: "#1f2937",
     dark: "#0c1523",
@@ -21,7 +22,8 @@ export const darkThemeColors = {
     light: '#fffaf4',
     DEFAULT: '#f1e1cf',
     dark: '#e2ceb8',
-    both: "#f1e1cf"
+    both: "#f1e1cf",
+    complementary: "#ffcc50",
   },
   border: {
     light: '#637591',
@@ -47,6 +49,7 @@ export const lightThemeColors = {
     both: "#2196f3"
   },
   background: {
+    extraLight: "#f5faff",
     light: '#f5faff',
     DEFAULT: '#d6e7fa',
     dark: '#ecf4fd',
@@ -56,7 +59,8 @@ export const lightThemeColors = {
     light: '#314567',
     DEFAULT: '#16202f',
     dark: '#060e1c',
-    both: "#f1e1cf"
+    both: "#f1e1cf",
+    complementary: "#145c96",
   },
   border: {
     light: '#637591',
