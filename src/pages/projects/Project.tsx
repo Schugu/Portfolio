@@ -76,18 +76,45 @@ export default function Project() {
                   <span className="w-7 h-7 md:w-9 md:h-9 icon-[tdesign--enter]" />
                 </Link>
               </Tooltip>
-              {project.linkGithub &&
-                <a
-                  className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
-                  hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
-                  href={project.linkGithub}
-                  target="_blank"
-                  aria-label={t("global:projects.viewRepository")}
-                  tabIndex={7}
-                >
-                  <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewRepository")}</p>
-                  <span className="w-6 h-6 md:w-9 md:h-9 icon-[iconoir--github-circle]" />
-                </a>
+
+              {
+                project.livePreviewLink && project.linkGithub
+                  ? (<a
+                    className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
+ hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
+                    href={project.livePreviewLink}
+                    target="_blank"
+                    aria-label={t("global:projects.viewProject")}
+                    tabIndex={7}
+                  >
+                    <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewDemo")}</p>
+                    <span className="w-6 h-6 md:w-9 md:h-9 icon-[gravity-ui--play]" />
+                  </a>)
+                  : project.livePreviewLink
+                    ? (<a
+                      className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
+ hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
+                      href={project.livePreviewLink}
+                      target="_blank"
+                      aria-label={t("global:projects.viewProject")}
+                      tabIndex={7}
+                    >
+                      <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewDemo")}</p>
+                      <span className="w-6 h-6 md:w-9 md:h-9 icon-[gravity-ui--play]" />
+                    </a>)
+                    : project.linkGithub
+                      ? (<a
+                        className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5
+              hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
+                        href={project.linkGithub}
+                        target="_blank"
+                        aria-label={t("global:projects.viewRepository")}
+                        tabIndex={7}
+                      >
+                        <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewRepository")}</p>
+                        <span className="w-6 h-6 md:w-9 md:h-9 icon-[iconoir--github-circle]" />
+                      </a>)
+                      : ""
               }
             </div>
 
@@ -103,13 +130,28 @@ export default function Project() {
             </div>
           </article>
 
-          <article className='w-full flex flex-col gap-4'>
+          <article className='w-full flex flex-col items-center gap-4'>
             <p tabIndex={20} className="w-full text-center text-xl md:text-2xl text-[var(--color-primary)]">{t("global:projects.technologies")}:</p>
             <div className="flex gap-2 flex-wrap justify-center">
               {project.techs.map((tech, index) => (
                 <Techs key={tech} tech={tech} tabIndex={index + 20} />
               ))}
             </div>
+            {
+              project.livePreviewLink && project.linkGithub
+                ? (<a
+                  className='w-fit flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5
+        hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
+                  href={project.linkGithub}
+                  target="_blank"
+                  aria-label={t("global:projects.viewRepository")}
+                  tabIndex={7}
+                >
+                  <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewRepository")}</p>
+                  <span className="w-6 h-6 md:w-9 md:h-9 icon-[iconoir--github-circle]" />
+                </a>)
+                : ""
+            }
           </article>
         </section>
 
@@ -149,6 +191,6 @@ export default function Project() {
           </section>
         )}
       </div>
-    </SectionCard>
+    </SectionCard >
   );
 }
