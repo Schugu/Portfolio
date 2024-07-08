@@ -44,7 +44,7 @@ export default function Card({ project }: CardProps) {
           {project.title}
         </p>
 
-        <section className='w-full flex justify-center flex-wrap gap-2'>
+        <section className='w-full flex justify-center items-center flex-wrap gap-2'>
           {project.techs.map((tech, index) => (
             <Tooltip text={tech} key={project.id + tech + index}>
               <IconosTechs tech={tech} tabIndex={51 + index} color='text-CREMA' />
