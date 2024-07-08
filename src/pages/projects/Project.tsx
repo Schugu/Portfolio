@@ -7,6 +7,8 @@ import Tooltip from "@/components/tooltip/Tooltip.tsx";
 import { useProfile } from "@/context/ProfileContext.tsx";
 import { useTranslation } from 'react-i18next';
 import { ProjectType } from '@/types/ProfileContextTypes.ts';
+import ViewRepository from "@/components/buttons/ViewRepository.tsx";
+import ViewDemo from "@/components/buttons/ViewDemo.tsx";
 
 type DeviceType = 'cellphone' | 'tablet' | 'desktop';
 
@@ -78,43 +80,11 @@ export default function Project() {
               </Tooltip>
 
               {
-                project.livePreviewLink && project.linkGithub
-                  ? (<a
-                    className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
- hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
-                    href={project.livePreviewLink}
-                    target="_blank"
-                    aria-label={t("global:projects.viewProject")}
-                    tabIndex={7}
-                  >
-                    <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewDemo")}</p>
-                    <span className="w-6 h-6 md:w-9 md:h-9 icon-[gravity-ui--play]" />
-                  </a>)
-                  : project.livePreviewLink
-                    ? (<a
-                      className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5 
- hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
-                      href={project.livePreviewLink}
-                      target="_blank"
-                      aria-label={t("global:projects.viewProject")}
-                      tabIndex={7}
-                    >
-                      <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewDemo")}</p>
-                      <span className="w-6 h-6 md:w-9 md:h-9 icon-[gravity-ui--play]" />
-                    </a>)
-                    : project.linkGithub
-                      ? (<a
-                        className='flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5
-              hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
-                        href={project.linkGithub}
-                        target="_blank"
-                        aria-label={t("global:projects.viewRepository")}
-                        tabIndex={7}
-                      >
-                        <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewRepository")}</p>
-                        <span className="w-6 h-6 md:w-9 md:h-9 icon-[iconoir--github-circle]" />
-                      </a>)
-                      : ""
+                project.livePreviewLink ? (
+                  <ViewDemo link={project.livePreviewLink} tabIndex={7} />
+                ) : project.linkGithub ? (
+                  <ViewRepository link={project.linkGithub} tabIndex={7} />
+                ) : null
               }
             </div>
 
@@ -138,19 +108,9 @@ export default function Project() {
               ))}
             </div>
             {
-              project.livePreviewLink && project.linkGithub
-                ? (<a
-                  className='w-fit flex flex-wrap gap-1 justify-center items-center rounded border-2 py-1 px-1.5
-        hover:text-[var(--color-primary)] border-[var(--color-text)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
-                  href={project.linkGithub}
-                  target="_blank"
-                  aria-label={t("global:projects.viewRepository")}
-                  tabIndex={7}
-                >
-                  <p className='hidden sm:inline-block text-sm md:text-xl'>{t("global:projects.viewRepository")}</p>
-                  <span className="w-6 h-6 md:w-9 md:h-9 icon-[iconoir--github-circle]" />
-                </a>)
-                : ""
+              project.livePreviewLink && project.linkGithub &&
+              (<ViewRepository link={project.linkGithub} tabIndex={7} />)
+
             }
           </article>
         </section>
