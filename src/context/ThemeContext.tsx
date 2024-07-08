@@ -92,12 +92,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-border-light: ${themeColors.border.light};
             --color-border-dark: ${themeColors.border.dark};
             --color-border-complementary: ${themeColors.border.complementary};
-            --color-accent1: ${themeColors.accent1};
-            --color-accent2: ${themeColors.accent2};
-            --color-accent3: ${themeColors.accent3};
             --color-colorOpacity: ${themeColors.colorOpacity};
             --color-primaryOpacity: ${themeColors.primaryOpacity};
-          }
         `}
       </style>
       {children}
