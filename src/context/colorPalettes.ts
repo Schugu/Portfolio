@@ -31,6 +31,23 @@ export const darkThemeColors = {
     dark: '#3F4F6A',
     complementary: "#2196f3"
   },
+  error: {
+    text: "#f2634a"
+  },
+  form: {
+    background: {
+      one: "#374151",
+      two: "#4b5563",
+      three: "#9ca3af",
+    },
+    button: {
+      background: "#ffcc50",
+      text: "#000000",
+      hover: "#cca340",
+      sent: "#22c55e",
+    },
+    placeholder: "#9ca3af",
+  },
   colorOpacity: "#f1e1cf18",
   primaryOpacity: "#ffcc5018"
 };
@@ -67,6 +84,23 @@ export const lightThemeColors = {
     DEFAULT: '#145c96',
     dark: '#3F4F6A',
     complementary: "#145c96"
+  },
+  error: {
+    text: "#ef4444"
+  },
+  form: {
+    background: {
+      one: "#f9fafb",
+      two: "#e5e7eb",
+      three: "#6b7280",
+    },
+    button: {
+      background: "#2196f3",
+      text: "#ffffff",
+      hover: "#89c4f3",
+      sent: "#22c55e",
+    },
+    placeholder: "#9ca3af",
   },
   colorOpacity: "#2195f318",
   primaryOpacity: "#2196f318"
