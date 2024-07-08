@@ -41,6 +41,7 @@ export interface ProjectType {
   moreInfo: string[];
   techs: string[];
   linkGithub?: string;
+  livePreviewLink?: string,
   cantScreenshots: {
     cellphone: number;
     tablet: number;
