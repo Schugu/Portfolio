@@ -38,19 +38,21 @@ export default function Contact() {
     <SectionCard sectionTitle={t("global:contact.section")}>
       <section className='flex flex-col md:flex-row gap-2 md:gap-10'>
         <form ref={formRef} onSubmit={onSubmit}
-          className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-center order-2 md:order-1">
+          className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-center order-2 md:order-1
+          text-[var(--color-text-complementary)]">
           <section className="w-full flex flex-col gap-1">
             <label
               htmlFor="website-admin"
-              className="text-xl font-medium text-AZUL-dark dark:text-AMARILLO"
+              className="text-xl font-medium"
             >
               {t("global:contact.fullname")}
             </label>
 
-            <div className={`flex ${errors.user_name ? "border-red-500" : " border-LIGHT-AzulClaro dark:border-DARK-BG-dark"} border-2 rounded overflow-hidden`}>
-              <span className="inline-flex items-center px-3 text-sm 
-            text-DARK-BG-light dark:text-gray-400 bg-gray-200 dark:bg-gray-600 
-            border-r-2 dark:border-gray-600 border-gray-400">              <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <div className={`flex ${errors.user_name ? "border-[var(--color-error-text)]" : "border-[var(--color-form-background-three)]"} border-2 rounded overflow-hidden`}>
+              <span className="inline-flex items-center px-4 text-sm 
+            text-[var(--color-text)] bg-[var(--color-form-background-two)]
+            border-r-2 border-[var(--color-form-background-three)]">
+                <svg className="w-4 h-4 text-[var(--color-form-background-three)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
                 </svg>
               </span>
@@ -60,30 +62,30 @@ export default function Contact() {
                 name="user_name"
                 id="website-admin"
                 className="w-full text-base p-2.5 
-              bg-gray-50  dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400
-              outline-none ring-0 border-2 border-transparent focus:border-AZUL-dark dark:focus:border-AMARILLO"
+                bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
+                outline-none ring-0 border-2 border-transparent focus:border-[var(--color-border)]"
                 placeholder="Jon Doe"
               />
             </div>
 
             {
               errors.user_name && (
-                <p tabIndex={6} className="text-sm text-red-600">{t("global:contact.fullnameError")}</p>
+                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.fullnameError")}</p>
               )
             }
           </section>
 
           <section className="w-full flex flex-col gap-1">
             <label htmlFor="email-address-icon"
-              className="text-xl font-medium text-AZUL-dark dark:text-AMARILLO"
+              className="text-xl font-medium"
             >
               {t("global:contact.email")}
             </label>
-            <div className={`flex ${errors.user_email ? "border-red-500" : " border-gray-400 dark:border-gray-600"} border-2 rounded overflow-hidden`}>
-              <span className="inline-flex items-center px-3 text-sm 
-            text-gray-900 dark:text-gray-400 bg-gray-200 dark:bg-gray-600 
-            border-r-2 dark:border-gray-600 border-gray-400">
-                <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+            <div className={`flex ${errors.user_email ? "border-[var(--color-error-text)]" : "border-[var(--color-form-background-three)]"} border-2 rounded overflow-hidden`}>
+              <span className="inline-flex items-center px-4 text-sm 
+            text-[var(--color-text)] bg-[var(--color-form-background-two)]
+            border-r-2 border-[var(--color-form-background-three)]">
+                <svg className="w-4 h-4 text-[var(--color-form-background-three)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                   <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
                   <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
                 </svg>
@@ -93,15 +95,15 @@ export default function Contact() {
                 type="text"
                 name="user_email"
                 className="w-full text-base p-2.5 
-              bg-gray-50  dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400
-              outline-none ring-0 border-2 border-transparent focus:border-AZUL-dark dark:focus:border-AMARILLO"
+                bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
+                outline-none ring-0 border-2 border-transparent focus:border-[var(--color-border)]"
                 placeholder="Jon@doe.com"
               />
             </div>
 
             {
               errors.user_email && (
-                <p tabIndex={6} className="text-sm text-red-600">{t("global:contact.emailError")}</p>
+                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.emailError")}</p>
               )
             }
           </section>
@@ -109,7 +111,7 @@ export default function Contact() {
           <section className="w-full flex flex-col gap-1">
             <label
               htmlFor="message"
-              className="text-xl font-medium text-AZUL-dark dark:text-AMARILLO"
+              className="text-xl font-medium"
             >
               {t("global:contact.message")}
             </label>
@@ -120,22 +122,22 @@ export default function Contact() {
               rows={4}
               placeholder={t("global:contact.messagePlaceholder")}
               className={`w-full h-52 resize-none text-base p-2.5 rounded outline-none ring-0 border-2
-              ${errors.message ? "border-red-500" : "border-gray-400 dark:border-gray-600 "}
-              bg-gray-50  dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400
-              focus:border-AZUL-dark dark:focus:border-AMARILLO
+              ${errors.message ? "border-[var(--color-error-text)]" : "border-[var(--color-form-background-three)]"}
+              bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
+              focus:border-[var(--color-border)]
               `}
             />
             {
               errors.message && (
-                <p tabIndex={6} className="text-sm text-red-600">{t("global:contact.messageError")}</p>
+                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.messageError")}</p>
               )
             }
           </section>
 
           <button
             type="submit"
-            className={`w-full text-white dark:text-black font-semibold rounded-lg text-base px-5 py-2.5
-            ${submitSuccess ? 'bg-green-500' : 'bg-AZUL hover:bg-AZUL-light dark:bg-AMARILLO dark:hover:bg-AMARILLO-dark'}`}
+            className={`w-full text-[var(--color-form-button-text)] font-semibold rounded-lg text-base px-5 py-2.5
+            ${submitSuccess ? 'bg-[var(--color-form-button-sent)]' : 'bg-[var(--color-form-button-background)] hover:bg-[var(--color-form-button-hover)]'}`}
             disabled={submitting}
           >
             {submitting ? t("global:contact.sending") : (submitSuccess ? t("global:contact.sent") : t("global:contact.button"))}
@@ -144,7 +146,7 @@ export default function Contact() {
 
         <article className='w-full md:w-1/2 flex flex-col items-center gap-2  order-1 md:order-2'>
           <div className='flex flex-col items-center gap-2'>
-            <p className='text-center text-2xl text-AZUL dark:text-AMARILLO'>{t("global:contact.titleText")}</p>
+            <p className='text-center text-2xl text-[var(--color-primary)]'>{t("global:contact.titleText")}</p>
 
             {loading && <p>Cargando...</p>}
             {!loading && !dataProfile && <p>No hay información disponible.</p>}
@@ -159,7 +161,7 @@ export default function Contact() {
             }
           </div>
 
-          <span className="w-36 h-36 icon-[tabler--message-chatbot-filled] text-AZUL dark:text-AMARILLO" />
+          <span className="w-36 h-36 icon-[tabler--message-chatbot-filled] text-[var(--color-primary)]" />
         </article>
       </section>
     </SectionCard>
