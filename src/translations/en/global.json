@@ -66,7 +66,8 @@
     "titleText": "Contact Me to Hire Me!"
   },
   "footer": {
-    "template": "Template made by"
+    "template1": "Template made with",
+    "template2": "by Leandro Schugurensky"
   },
   "modal": {
     "close": "Close",
