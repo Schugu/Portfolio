@@ -165,8 +165,8 @@ export default function Project() {
                   }
                   className={`p-1
                     ${device === 'cellphone' ? 'w-1/4' : ''} 
-                    ${device === 'tablet' ? 'w-1/3' : ''} 
-                    ${device === 'desktop' ? 'w-1/2' : ''}
+                    ${device === 'tablet' ? 'w-1/4' : ''} 
+                    ${device === 'desktop' ? 'w-1/3' : ''}
                   `}
                 >
                   <img
