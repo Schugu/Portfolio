@@ -29,9 +29,6 @@ export const darkThemeColors = {
     dark: '#3F4F6A',
     complementary: "#2196f3"
   },
-  accent1: '#18263E',
-  accent2: '#060e1c',
-  accent3: '#637591',
   colorOpacity: "#f1e1cf18",
   primaryOpacity: "#ffcc5018"
 };
@@ -67,9 +64,6 @@ export const lightThemeColors = {
     dark: '#3F4F6A',
     complementary: "#145c96"
   },
-  accent1: '#18263E',
-  accent2: '#060e1c',
-  accent3: '#637591',
   colorOpacity: "#2195f318",
   primaryOpacity: "#2196f318"
 };
