@@ -82,18 +82,30 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-secondary-both: ${themeColors.secondary.both};
             --color-background: ${themeColors.background.DEFAULT};
             --color-background-light: ${themeColors.background.light};
+            --color-background-extraLight: ${themeColors.background.extraLight};
             --color-background-dark: ${themeColors.background.dark};
             --color-background-both: ${themeColors.background.both};
             --color-text: ${themeColors.text.DEFAULT};
             --color-text-dark: ${themeColors.text.dark};
             --color-text-light: ${themeColors.text.light};
             --color-text-both: ${themeColors.text.both};
+            --color-text-complementary: ${themeColors.text.complementary};
             --color-border: ${themeColors.border.DEFAULT};
             --color-border-light: ${themeColors.border.light};
             --color-border-dark: ${themeColors.border.dark};
             --color-border-complementary: ${themeColors.border.complementary};
             --color-colorOpacity: ${themeColors.colorOpacity};
             --color-primaryOpacity: ${themeColors.primaryOpacity};
+            --color-error-text: ${themeColors.error.text};
+            --color-form-background-one: ${themeColors.form.background.one};
+            --color-form-background-two: ${themeColors.form.background.two};
+            --color-form-background-three: ${themeColors.form.background.three};
+            --color-form-button-background: ${themeColors.form.button.background};
+            --color-form-button-text: ${themeColors.form.button.text};
+            --color-form-button-hover: ${themeColors.form.button.hover};
+            --color-form-button-sent: ${themeColors.form.button.sent};
+            --color-form-placeholder: ${themeColors.form.placeholder};
+            }
         `}
       </style>
       {children}
