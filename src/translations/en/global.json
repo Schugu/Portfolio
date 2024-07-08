@@ -28,7 +28,8 @@
     "section": "Projects",
     "showMore": "View more",
     "back": "Back",
-    "viewRepository": "View Repository",
+    "viewRepository": "View repository",
+    "viewDemo": "View demo",
     "technologies": "Technologies",
     "screenshots": "Screenshots",
     "device": {
