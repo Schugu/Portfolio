@@ -1,7 +1,10 @@
 import SectionCard from "@/components/SectionCard";
-import Card from "./Card";
 import { useProfile } from "@/context/ProfileContext";
+import { lazy, Suspense } from "react";
 import { useTranslation } from 'react-i18next';
+import Skeleton from "./Skeleton";
+
+const Card = lazy(() => import('./Card'));
 
 const Projects: React.FC = () => {
   const { t } = useTranslation(['global', 'profile', 'projects']);
@@ -27,7 +30,9 @@ const Projects: React.FC = () => {
               <p className="text-3xl font-bold text-[var(--color-primary)]">{approach}</p>
               <section className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-3">
                 {projects.map((project) => (
-                  <Card key={"project" + project.id} project={project} />
+                  <Suspense fallback={<div className="w-full h-72 border-2 border-[var(--color-border)] shadow-[var(--color-border)] bg-[var(--color-colorOpacity)]"></div>}>
+                    <Card key={"project" + project.id} project={project} />
+                  </Suspense>
                 ))}
               </section>
             </div>
