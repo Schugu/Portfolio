@@ -68,8 +68,7 @@ const ChangeLanguage = ({ tabIndex }: {tabIndex: number}) => {
       ...provided,
       color: "var(--color-text)",
       cursor: 'pointer',
-      display: state.isSelected ? 'none' : 'block',
-      backgroundColor: state.isSelected ? 'var(--color-primary)' : 'transparent',
+      backgroundColor: state.isFocused ? "var(--color-background-light)" : "transparent",
       '&:hover': {
         backgroundColor: "var(--color-background-light)",
       }
