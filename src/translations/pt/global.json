@@ -65,7 +65,8 @@
     "button": "Enviar",
     "sending": "Enviando...",
     "sent": "Enviado com sucesso.",
-    "titleText": "Entre em Contato para me Contratar!"
+    "titleText": "Entre em Contato para me Contratar!",
+    "textLoading": "Carregando..." 
   },
   "footer": {
     "template1": "Template feito com",

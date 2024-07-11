@@ -65,7 +65,8 @@
     "button": "Send",
     "sending": "Sending...",
     "sent": "Sent successfully.",
-    "titleText": "Contact Me to Hire Me!"
+    "titleText": "Contact Me to Hire Me!",
+    "textLoading": "Loading..." 
   },
   "footer": {
     "template1": "Template made with",

@@ -148,8 +148,8 @@ export default function Contact() {
           <div className='flex flex-col items-center gap-2'>
             <p className='text-center text-2xl text-[var(--color-primary)]'>{t("global:contact.titleText")}</p>
 
-            {loading && <p>Cargando...</p>}
-            {!loading && !dataProfile && <p>No hay información disponible.</p>}
+            {loading && <p className='text-center text-xl' tabIndex={8}>{t("global:contact.textLoading")}</p>}
+            {!loading && !dataProfile && <p className='text-center text-xl' tabIndex={8}>{t("global:infoNotAvailable")}</p>}
 
             {
               !loading && dataProfile && (
