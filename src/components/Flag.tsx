@@ -6,9 +6,10 @@ type FlagProp = {
   country: string;
   width: number;
   height: number;
+  tabIndex?: number;
 }
 
-export default function Flag({ country, width, height }: FlagProp) {
+export default function Flag({ country, width, height, tabIndex }: FlagProp) {
   const [icono, setIcono] = useState('');
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Flag({ country, width, height }: FlagProp) {
 
   return (
     <Tooltip text={country}>
-      <span className={`w-${width} h-${height} ${icono}`} />
+      <span className={`w-${width} h-${height} ${icono}`} tabIndex={tabIndex} aria-label={country}/>
     </Tooltip>
   )
 }
