@@ -18,7 +18,7 @@ export default function LinkTo({ to, label, tabIndex }: LinkToProps) {
           : 'border-transparent text-[var(--color-text)]'}
           hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]`}
     >
-      <p className="text-lg md:text-2xl font-ubuntu font-thin text-[var(--color-primary)]">#</p>
+      <p aria-hidden className="text-lg md:text-2xl font-ubuntu font-thin text-[var(--color-primary)]">#</p>
       {label}
     </Link>
   )
