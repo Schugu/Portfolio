@@ -71,7 +71,7 @@ const ImgModal: React.FC<ImgModalProps> = ({ children }) => {
               flex flex-col items-center justify-start"
             >
               <Tooltip position='left' text={t("global:modal.close")}>
-                <button onClick={handleCloseModal} className='hover:text-[var(--color-primary)]'>
+                <button onClick={handleCloseModal} className='hover:text-[var(--color-primary)]' tabIndex={1} aria-label={t("global:modal.close")}>
                   <span className="icon-[ion--close-circled]" />
                 </button>
               </Tooltip>
@@ -79,7 +79,7 @@ const ImgModal: React.FC<ImgModalProps> = ({ children }) => {
                 modalData.linkToOpen &&
                 <Tooltip position='left' text={t("global:modal.link")}>
                   <a href={modalData.linkToOpen} className='hover:text-[var(--color-primary)]'
-                    target='_blank' rel='noopener noreferrer'>
+                    target='_blank' rel='noopener noreferrer' tabIndex={1} aria-label={t("global:modal.link")}>
                     <span className="icon-[iconoir--internet]" />
                   </a>
                 </Tooltip>
