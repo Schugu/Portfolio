@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 interface IconosTechsProps {
   tech: string;
-  tabIndex: number;
+  tabIndex?: number;
   color?: string;
 }
 
