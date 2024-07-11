@@ -25,6 +25,7 @@ export default function Navbar() {
 
       <div className="lg:hidden">
         <button
+          tabIndex={1}
           className="flex items-center text-[var(--color-primary)]"
           onClick={toggleMenu}
         >
@@ -35,51 +36,51 @@ export default function Navbar() {
           }
         </button>
       </div>
-      <ul className={`${isMenuOpen ? 'block' : 'hidden'
-        } lg:flex lg:items-center lg:justify-center lg:flex-wrap lg:gap-4 p-2 
-          max-lg:absolute max-lg:right-0 max-lg:top-12 max-lg:z-10
-          w-full sm:w-1/2 md:w-auto rounded
-         bg-[var(--color-background-dark)] text-[var(--color-text)]
-        max-lg:border-2 max-lg:border-[var(--color-primary)] 
-        `}>
+      <ul className={`${isMenuOpen ? 'block' : 'hidden'} 
+        lg:flex lg:items-center lg:justify-center lg:flex-wrap lg:gap-4 p-2 
+        max-lg:absolute max-lg:right-0 max-lg:top-12 max-lg:z-10
+        w-full sm:w-1/2 md:w-auto rounded
+        bg-[var(--color-background-dark)] text-[var(--color-text)]
+        max-lg:border-2 max-lg:border-[var(--color-primary)]`
+      }>
 
 
+        <li>
+          <LinkTo to="/home" label={t("global:navbar.home")} tabIndex={1} />
+        </li>
+
+        <li>
+          <LinkTo to="/projects" label={t("global:navbar.projects")} tabIndex={1} />
+        </li>
+
+        <li>
+          <LinkTo to="/cv" label={t("global:navbar.cv")} tabIndex={1} />
+        </li>
+
+        {
+          dataProfile?.workExperience &&
           <li>
-            <LinkTo to="/home" label={t("global:navbar.home")} tabIndex={2} />
+            <LinkTo to="/experience" label={t("global:navbar.experience")} tabIndex={1} />
           </li>
+        }
 
+        {
+          dataProfile?.certificates &&
           <li>
-            <LinkTo to="/projects" label={t("global:navbar.projects")} tabIndex={3} />
+            <LinkTo to="/education" label={t("global:navbar.education")} tabIndex={1} />
           </li>
+        }
+        <li>
 
-          <li>
-            <LinkTo to="/cv" label={t("global:navbar.cv")} tabIndex={4} />
-          </li>
+          <LinkTo to="/contact" label={t("global:navbar.contact")} tabIndex={1} />
+        </li>
 
-          {
-            dataProfile?.workExperience &&
-            <li>
-              <LinkTo to="/experience" label={t("global:navbar.experience")} tabIndex={5} />
-            </li>
-          }
-
-          {
-            dataProfile?.certificates &&
-            <li>
-              <LinkTo to="/education" label={t("global:navbar.education")} tabIndex={6} />
-            </li>
-          }
-          <li>
-
-            <LinkTo to="/contact" label={t("global:navbar.contact")} tabIndex={7} />
-          </li>
-          
-          <li className="flex items-center justify-between gap-2">
-            <ChangeLanguage />
-            <Tooltip text={t("global:navbar.changeTheme")} position="left">
-              <ChangeTheme />
-            </Tooltip>
-          </li>
+        <li className="flex items-center justify-between gap-2">
+          <ChangeLanguage tabIndex={1} />
+          <Tooltip text={t("global:navbar.changeTheme")} position="left">
+            <ChangeTheme tabIndex={1} />
+          </Tooltip>
+        </li>
       </ul>
     </nav>
   )
