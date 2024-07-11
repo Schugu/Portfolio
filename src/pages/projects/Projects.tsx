@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
   return (
     <SectionCard sectionTitle={t("global:projects.section")}>
       {loading && <SkeletonUniversal />}
-      {!loading && !dataProjects && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
+      {!loading && !dataProjects && <p className="text-3xl text-center" tabIndex={3}>{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProjects && dataProjects.approaches &&
         <article className="flex flex-col gap-10">
