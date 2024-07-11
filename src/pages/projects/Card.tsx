@@ -22,8 +22,6 @@ export default function Card({ project, tabIndex }: CardProps) {
     setTimeout(() => setIsVisible(false), 100);
   };
 
-
-
   return (
     <div
       key={project.id}
@@ -52,7 +50,7 @@ export default function Card({ project, tabIndex }: CardProps) {
 
         <section className='w-full flex justify-center items-center flex-wrap gap-2'>
           {project.techs.map((tech, index) => (
-            <Tooltip text={tech} key={project.id + tech + index}>
+            <Tooltip text={tech} key={`${project.id}-${tech}-${index}`}>
               <IconosTechs tech={tech} color='text-CREMA' />
             </Tooltip>
           ))}
