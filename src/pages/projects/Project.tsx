@@ -58,7 +58,7 @@ export default function Project() {
   if (!projectId || !dataProjects || !project) {
     return (
       <SectionCard sectionTitle={t("global:projects.section")}>
-        <p tabIndex={7} className="text-2xl">{t("global:projects.projectNotFound")}</p>
+        <p tabIndex={7} className="text-3xl text-center">{t("global:projects.projectNotFound")}</p>
       </SectionCard>
     );
   }
