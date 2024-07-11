@@ -16,10 +16,11 @@ interface Work {
 interface TimelineItemProps {
   index: string | number;
   work: Work;
+  tabIndex: number;
 }
 
 
-const TimelineItem = ({ work, index }: TimelineItemProps) => {
+const TimelineItem = ({ work, index, tabIndex }: TimelineItemProps) => {
   const { t } = useTranslation(['global', 'profile', 'projects']);
 
   return (
@@ -37,23 +38,23 @@ const TimelineItem = ({ work, index }: TimelineItemProps) => {
           </span>
           <article className="w-full md:w-5/12 flex flex-col gap-2">
 
-            <p className="text-2xl font-bold text-[var(--color-secondary)]">
+            <p className="text-2xl font-bold text-[var(--color-secondary)]" tabIndex={tabIndex}>
               {t(`profile:workExperience.${index}.title`)}
             </p>
 
-            <time className="italic text-base font-normal leading-none text-[var(--color-text)]">{t(`profile:workExperience.${index}.date`)}</time>
+            <time className="italic text-base font-normal leading-none text-[var(--color-text)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.date`)}</time>
 
             {
               work.company &&
-              <p className="text-lg font-medium text-[var(--color-text-light)]">{t(`profile:workExperience.${index}.company`)}</p>
+              <p className="text-lg font-medium text-[var(--color-text-light)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.company`)}</p>
             }
 
             <div className="flex items-center gap-2 text-[--color-primary]">
-              <p className="italic">
+              <p className="italic" tabIndex={tabIndex}>
                 {t(`profile:workExperience.${index}.modality`)} - {t(`profile:workExperience.${index}.workplace`)}.
               </p>
 
-              <Flag country={work.country} width={8} height={8} />
+              <Flag country={work.country} width={8} height={8} tabIndex={tabIndex}/>
             </div>
           </article>
 
@@ -61,16 +62,16 @@ const TimelineItem = ({ work, index }: TimelineItemProps) => {
           <article className="w-full md:w-7/12 flex flex-col gap-6">
             {
               work.description.map((_, pIndex) => (
-                <p key={"work" + index + pIndex} className="max-w-[75ch] text-xl font-medium text-[var(--color-text-light)]">{t(`profile:workExperience.${index}.description.${pIndex}`)}</p>
+                <p key={"work" + index + pIndex} className="max-w-[75ch] text-xl font-medium text-[var(--color-text-light)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.description.${pIndex}`)}</p>
               ))
             }
             {
               work.tasks && (
                 <div className="flex flex-col gap-1">
-                  <p className="text-xl font-semibold text-[var(--color-primary)]">{t("global:workExperience.tasks")}</p>
+                  <p className="text-xl font-semibold text-[var(--color-primary)]" tabIndex={tabIndex}>{t("global:workExperience.tasks")}</p>
                   <ol className="w-full list-inside list-disc">
                     {work.tasks.map((_, taskIndex) => (
-                      <li key={"work" + index + taskIndex} className="text-[var(--color-primary)]">
+                      <li key={"work" + index + taskIndex} className="text-[var(--color-primary)]" tabIndex={tabIndex}>
                         <p className="max-w-[75ch] inline italic text-lg font-normal text-[var(--color-text)]">
                           {t(`profile:workExperience.${index}.tasks.${taskIndex}`)}
                         </p>
@@ -84,7 +85,7 @@ const TimelineItem = ({ work, index }: TimelineItemProps) => {
               work.infoLink &&
               <a href={work.infoLink} className="w-fit text-lg transition-colors duration-100 ease-in-out
               text-[var(--color-secondary)] hover:text-[var(--color-secondary-light)]
-              ">
+              " tabIndex={tabIndex}>
                 {t("global:workExperience.moreInfo")}
               </a>
             }
