@@ -31,7 +31,7 @@ export default function Education() {
                     className='transform hover:scale-110 transition duration-300 cursor-pointer
                     border-2 border-[var(--color-border-complementary)] rounded overflow-hidden'
                     src={`/profile/education/${index + 1}.jpg`}
-                    alt={`Screenshot ${index + 1}`} tabIndex={4} 
+                    alt={t("global:projects.screenshot") + (index + 1)} tabIndex={4} 
                   />
                 </div>
               ))}
