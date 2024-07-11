@@ -2,8 +2,8 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import { ProfileType, ProjectsType } from "@/types/ProfileContextTypes";
 
 interface CombinedData {
-  dataProfile: ProfileType | null; 
-  dataProjects: ProjectsType | null; 
+  dataProfile: ProfileType | null;
+  dataProjects: ProjectsType | null;
   loading: boolean;
 }
 
