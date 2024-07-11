@@ -7,8 +7,9 @@
     "education": "Diplomas and Certificates",
     "contact": "Contact",
     "changeTheme": "Change theme",
-    "nameNotAvailable": "Name not available"
+    "nameNotAvailable": "Name not available",
     "selectLanguage": "Select language",
+    "changeTheme-aria-label": "Change theme, current theme"
   },
   "homePage": {
     "section": "Presentation",

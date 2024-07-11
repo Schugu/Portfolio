@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '@/context/ThemeContext.tsx';
 import Cookies from 'js-cookie';
+import { useTranslation } from "react-i18next";
 
 type Theme = 'light' | 'dark';
 
@@ -10,6 +11,7 @@ interface ThemeContextType {
 }
 
 export default function ChangeTheme({ tabIndex }: { tabIndex: number }) {
+  const { t } = useTranslation(['global']);
   const { theme, setTheme } = useTheme() as ThemeContextType;
 
   const handleChangeTheme = () => {
@@ -32,7 +34,7 @@ export default function ChangeTheme({ tabIndex }: { tabIndex: number }) {
 
   return (
     <div
-      aria-label={`Cambiar de tema, tema actual: ${theme}`}
+      aria-label={`${t("global:navbar.changeTheme-aria-label")}: ${theme}`}
       onClick={handleChangeTheme}
       onKeyDown={handleKeyDown}
       className="cursor-pointer select-none flex justify-center items-center"

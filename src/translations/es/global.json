@@ -7,8 +7,9 @@
     "education": "Diplomas y Certificados",
     "contact": "Contacto",
     "changeTheme": "Cambiar tema",
-    "nameNotAvailable": "Nombre no disponible"
+    "nameNotAvailable": "Nombre no disponible",
     "selectLanguage": "Seleccionar idioma",
+    "changeTheme-aria-label": "Cambiar de tema, tema actual"
   },
   "homePage": {
     "section": "Presentación",
@@ -16,7 +17,7 @@
       "title": "Habilidades",
       "frontEnd": "Desarrollo Front-End",
       "dataBase": "Base de datos",
-      "versionControl": "Control de verisones",
+      "versionControl": "Control de versiones",
       "backEnd": "Desarrollo Back-End",
       "languages": "Lenguajes",
       "tools": "Herramientas",
@@ -67,7 +68,7 @@
     "sending": "Enviando...",
     "sent": "Enviado correctamente.",
     "titleText": "¡Contáctame para Contratarme!",
-    "textLoading": "Cargando..." 
+    "textLoading": "Cargando..."
   },
   "footer": {
     "template1": "Template hecho con",
