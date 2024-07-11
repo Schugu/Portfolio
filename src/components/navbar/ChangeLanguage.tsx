@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Select, { StylesConfig } from 'react-select';
 
@@ -8,7 +8,7 @@ interface OptionType {
 }
 
 const ChangeLanguage = ({ tabIndex }: {tabIndex: number}) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation(['global']);
 
   const changeLanguage = (selectedOption: OptionType | null) => {
     if (selectedOption) {
@@ -94,9 +94,10 @@ const ChangeLanguage = ({ tabIndex }: {tabIndex: number}) => {
       options={options}
       value={selectedOption}
       onChange={changeLanguage}
-      aria-label="Select language"
+      aria-label={t("global:navbar.selectLanguage")}
       className="w-fit"
       tabIndex={tabIndex}
+      isSearchable={false}
     />
   );
 };
