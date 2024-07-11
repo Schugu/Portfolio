@@ -163,7 +163,8 @@ export default function Project() {
                       <img
                         className="w-full h-auto border-2 border-[var(--color-border)] cursor-pointer"
                         src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`}
-                        alt={`Screenshot ${index + 1}`}
+                        alt={t("global:projects.screenshot") + (index + 1)}
+                        tabIndex={13}
                       />
                     </div>
                   ))}
