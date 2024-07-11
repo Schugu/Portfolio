@@ -23,7 +23,7 @@ i18next
     interpolation: { escapeValue: false },
     lng: savedLanguage,
     fallbackLng: 'es', 
-    ns: ['global', 'profile', 'projects'], 
+    ns: ['global', 'profile', 'projects'],
     resources: {
       es: {
         global: global_es,

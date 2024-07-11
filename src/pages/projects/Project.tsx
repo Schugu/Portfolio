@@ -11,6 +11,7 @@ import ViewRepository from "@/components/buttons/ViewRepository.tsx";
 import ViewDemo from "@/components/buttons/ViewDemo.tsx";
 import ImgModal from "@/components/ImgModal.tsx"
 import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
+
 type DeviceType = 'cellphone' | 'tablet' | 'desktop';
 
 type NewProjectType = ProjectType & {
@@ -111,7 +112,6 @@ export default function Project() {
             {
               project.livePreviewLink && project.linkGithub &&
               (<ViewRepository link={project.linkGithub} tabIndex={7} />)
-
             }
           </article>
         </section>

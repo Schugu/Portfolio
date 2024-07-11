@@ -14,7 +14,7 @@ export default function Education() {
       {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile?.certificates && (
-        
+
         <ImgModal>
           {handleImageClick => (
             <article className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-4">
