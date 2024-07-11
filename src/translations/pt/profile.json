@@ -1,11 +1,11 @@
 {
   "fullname": "Leandro Daniel Schugurensky",
   "aboutMe": [
-    "Olá a todos! Eu sou Leandro Daniel Schugurensky, tenho 23 anos e tenho experiência em funções administrativas. Destaco-me em tarefas tecnológicas e como programador Front-End, especializado em HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git e GitHub. Também tenho experiência no manuseio de bancos de dados como MongoDB e Firebase.",
-    "Estou comprometido com a aprendizagem contínua e na melhoria constante das minhas habilidades como desenvolvedor. Meu objetivo é continuar crescendo profissionalmente no campo do desenvolvimento web, contribuindo com meus conhecimentos e habilidades para criar aplicações web robustas e eficientes.",
-    "Se você está procurando um desenvolvedor comprometido e entusiasta para sua equipe, não hesite em me contatar."
+    "Olá a todos! Eu sou Leandro Daniel Schugurensky, tenho 23 anos e tenho experiência em funções administrativas. Eu me destaco em tarefas tecnológicas e como desenvolvedor Front-End, especializado em HTML, CSS, JavaScript, React, Next.js e Tailwind CSS. Além disso, tenho experiência com Git e GitHub para controle de versão, e trabalhei com bancos de dados como MongoDB e Firebase. Uso ferramentas como Google Suite e Microsoft Office para gestão e criação de documentos, e NPM para gerenciamento de pacotes Node.js. Também implemento ESLint para garantir a qualidade do código em meus projetos. Estou comprometido com a aprendizagem contínua e a melhoria constante das minhas habilidades como desenvolvedor, sempre buscando criar aplicações web robustas e eficientes."
   ],
-  "hobbies": "",
+  "hobbies": [
+    "Gosto de ir à academia para me manter ativo e em forma. Também adoro caminhadas ao ar livre, especialmente em contato com a natureza. Sou apaixonado por leitura, explorando diversos temas para continuar aprendendo, e sou um fã do universo Marvel, aproveitando seus filmes e séries."
+  ],
   "titles": [
     "Desenvolvedor Front-end"
   ],
@@ -41,7 +41,7 @@
       "Google Suite",
       "Microsoft Office",
       "NPM",
-      "Eslint"
+      "ESLint"
     ],
     "ides": [
       "Visual Studio Code"
@@ -51,28 +51,34 @@
   "workExperience": [
     {
       "title": "Administrativo",
-      "company": "Subsecretaría da Família da Prefeitura da Cidade de Corrientes",
+      "company": "Subsecretaria da Família da Prefeitura da Cidade de Corrientes",
       "date": "Nov. 2023 - Jun. 2024 · 8 meses",
-      "modality": "Presencial",
+      "modality": "Presencial - Meio Período",
       "workplace": "Corrientes, Argentina",
       "country": "Argentina",
       "description": [
-        "Estágio (8 meses) no programa T.T.P (Treinamento para o Trabalho Público). Atividades administrativas: digitalização e carregamento de processos, entrada de dados na base, entre outras."
+        "Estágio (8 meses) no âmbito do programa E.T.P (Treinamento para Trabalho Público). Desempenho de tarefas administrativas: carregamento e digitalização de arquivos, carregamento de banco de dados, entre outras."
       ],
-      "tasks": "",
+      "tasks": [
+        "Carregamento e digitalização de arquivos.",
+        "Carregamento de banco de dados."
+      ],
       "infoLink": ""
     },
     {
       "title": "Administrativo",
       "company": "Direção Geral de Deficiência e Inclusão Social da Prefeitura da Cidade de Corrientes",
       "date": "Jun. 2022 - Jan. 2023 · 8 meses",
-      "modality": "Presencial",
+      "modality": "Presencial - Meio Período",
       "workplace": "Corrientes, Argentina",
       "country": "Argentina",
       "description": [
-        "Funções administrativas: digitalização e carregamento, entrada de dados no banco, entre outras."
+        "Desempenho de tarefas administrativas: carregamento e digitalização de arquivos, carregamento de banco de dados, entre outras."
       ],
-      "tasks": "",
+      "tasks": [
+        "Carregamento e digitalização de arquivos.",
+        "Carregamento de banco de dados."
+      ],
       "infoLink": ""
     }
   ],
@@ -85,6 +91,6 @@
     "https://www.udemy.com/certificate/UC-4ca8e86d-e5e7-4696-be4b-aa738bc426fd/"
   ],
   "textContact": [
-    "Você está procurando alguém com habilidades e experiência para um novo projeto ou posição? Estou disponível para novas oportunidades e ficaria feliz em ouvir sobre sua proposta. Se você acha que meu perfil se encaixa no que você precisa, sinta-se à vontade para entrar em contato. Por favor, preencha o formulário abaixo e entrarei em contato o mais breve possível."
+    "Você está procurando alguém com habilidades e experiência para um novo projeto ou posição? Estou disponível para novas oportunidades e adoraria ouvir sobre sua proposta. Se você acha que meu perfil se encaixa no que você precisa, sinta-se à vontade para entrar em contato comigo. Por favor, preencha o formulário a seguir e entrarei em contato o mais breve possível."
   ]
 }

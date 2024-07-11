@@ -1,15 +1,15 @@
 {
   "fullname": "Leandro Daniel Schugurensky",
   "aboutMe": [
-    "Hello everyone! I'm Leandro Daniel Schugurensky, I'm 23 years old and have experience in administrative roles. I excel in technological tasks and as a Front-End programmer, specializing in HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git, and GitHub. I also have experience in handling databases like MongoDB and Firebase.",
-    "I am committed to continuous learning and constantly improving my skills as a developer. My goal is to keep growing professionally in the field of web development, contributing my knowledge and skills to create robust and efficient web applications.",
-    "If you are looking for a committed and enthusiastic developer for your team, feel free to contact me."
+    "Hello everyone! I'm Leandro Daniel Schugurensky, 23 years old, with experience in administrative roles. I specialize in technical tasks and as a Front-End developer, with expertise in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I also have experience with Git and GitHub for version control, and I've worked with databases like MongoDB and Firebase. I use tools such as Google Suite and Microsoft Office for document management and creation, and NPM for Node.js package management. I also implement ESLint to ensure code quality in my projects. I am committed to continuous learning and constantly improving my skills as a developer, always aiming to create robust and efficient web applications."
   ],
-  "hobbies": "",
+  "hobbies": [
+    "I enjoy going to the gym to stay active and fit. I also love outdoor walks, especially in nature. I'm passionate about reading, exploring various topics to keep learning, and I'm a Marvel universe fanatic, enjoying its movies and series."
+  ],
   "titles": [
-    "Front-end Developer"
+    "Front-End Developer"
   ],
-  "years": "23 years",
+  "years": "23 years old",
   "nationality": "Argentina",
   "linksSocialNetworks": {
     "Github": "https://github.com/Schugu",
@@ -19,7 +19,7 @@
     "Email": "mailto:leo.schugu@gmail.com",
     "CV": "/profile/CV.pdf"
   },
- "skills": {
+  "skills": {
     "frontEnd": [
       "HTML",
       "CSS",
@@ -41,7 +41,7 @@
       "Google Suite",
       "Microsoft Office",
       "NPM",
-      "Eslint"
+      "ESLint"
     ],
     "ides": [
       "Visual Studio Code"
@@ -53,26 +53,32 @@
       "title": "Administrative",
       "company": "Subsecretariat of the Family of the Municipality of the City of Corrientes",
       "date": "Nov. 2023 - Jun. 2024 · 8 months",
-      "modality": "In-person",
+      "modality": "On-site - Part-time",
       "workplace": "Corrientes, Argentina",
       "country": "Argentina",
       "description": [
-        "Work placement (8 months) under the E.T.P (Work Training Program). Administrative tasks: loading and digitization of records, database entry, among others."
+        "Internship (8 months) under the E.T.P program (Training for Public Work). Performance of administrative tasks: file loading and digitization, database loading, among others."
       ],
-      "tasks": "",
+      "tasks": [
+        "File loading and digitization.",
+        "Database loading."
+      ],
       "infoLink": ""
     },
     {
       "title": "Administrative",
       "company": "General Directorate of Disability and Social Inclusion of the Municipality of the City of Corrientes",
       "date": "Jun. 2022 - Jan. 2023 · 8 months",
-      "modality": "In-person",
+      "modality": "On-site - Part-time",
       "workplace": "Corrientes, Argentina",
-      "country": "Peru",
+      "country": "Argentina",
       "description": [
-        "Administrative tasks: loading and digitization of records, database entry, among others."
+        "Performance of administrative tasks: file loading and digitization, database loading, among others."
       ],
-      "tasks": "",
+      "tasks": [
+        "File loading and digitization.",
+        "Database loading."
+      ],
       "infoLink": ""
     }
   ],
@@ -85,6 +91,6 @@
     "https://www.udemy.com/certificate/UC-4ca8e86d-e5e7-4696-be4b-aa738bc426fd/"
   ],
   "textContact": [
-    "Are you looking for someone with skills and experience for a new project or position? I'm available for new opportunities and would love to hear about your proposal. If you think my profile fits what you need, feel free to get in touch. Please fill out the form below, and I'll get back to you as soon as possible."
+    "Are you looking for someone with skills and experience for a new project or position? I'm available for new opportunities and would love to hear about your proposal. If you think my profile fits what you need, feel free to get in touch with me. Please fill out the following form and I'll contact you as soon as possible."
   ]
 }

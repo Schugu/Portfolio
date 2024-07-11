@@ -1,17 +1,13 @@
 {
   "fullname": "Leandro Daniel Schugurensky",
   "aboutMe": [
-    "¡Hola a todos! Soy Leandro Daniel Schugurensky, tengo 23 años y cuento con experiencia en roles administrativos. Me destaco en tareas tecnológicas y como programador Front-End, especializado en HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git y GitHub. También tengo experiencia en el manejo de bases de datos como MongoDB y Firebase.",
-    "Estoy comprometido con el aprendizaje continuo y en la mejora constante de mis habilidades como desarrollador. Mi objetivo es seguir creciendo profesionalmente en el campo del desarrollo web, aportando mis conocimientos y habilidades para crear aplicaciones web robustas y eficientes.",
-    "Si buscas un desarrollador comprometido y entusiasta para tu equipo, no dudes en contactarme."
+    "¡Hola a todos! Soy Leandro Daniel Schugurensky, tengo 23 años y cuento con experiencia en roles administrativos. Me destaco en tareas tecnológicas y como programador Front-End, especializado en HTML, CSS, JavaScript, React, Next.js y Tailwind CSS. Además, tengo experiencia con Git y GitHub para el control de versiones, y he trabajado con bases de datos como MongoDB y Firebase. Utilizo herramientas como Google Suite y Microsoft Office para la gestión y creación de documentos, y NPM para la gestión de paquetes de Node.js. También implemento Eslint para asegurar la calidad del código en mis proyectos. Estoy comprometido con el aprendizaje continuo y en la mejora constante de mis habilidades como desarrollador, siempre buscando crear aplicaciones web robustas y eficientes."
   ],
   "hobbies": [
-    "¡Hola a todos! Soy Leandro Daniel Schugurensky, tengo 23 años y cuento con experiencia en roles administrativos. Me destaco en tareas tecnológicas y como programador Front-End, especializado en HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Git y GitHub. También tengo experiencia en el manejo de bases de datos como MongoDB y Firebase.",
-    "Estoy comprometido con el aprendizaje continuo y en la mejora constante de mis habilidades como desarrollador. Mi objetivo es seguir creciendo profesionalmente en el campo del desarrollo web, aportando mis conocimientos y habilidades para crear aplicaciones web robustas y eficientes.",
-    "Si buscas un desarrollador comprometido y entusiasta para tu equipo, no dudes en contactarme."
+    "Disfruto del gym para mantenerme activo y en forma. Además, disfruto de caminatas al aire libre, especialmente en contacto con la naturaleza. También me apasiona la lectura, explorando temas variados para seguir aprendiendo y soy un fanático del universo Marvel, disfrutando de sus películas y series."
   ],
   "titles": [
-    "Desarollador Front-end"
+    "Desarrollador Front-end"
   ],
   "years": "23 años",
   "nationality": "Argentina",
@@ -45,7 +41,7 @@
       "Google Suite",
       "Microsoft Office",
       "NPM",
-      "Eslint"
+      "ESLint"
     ],
     "ides": [
       "Visual Studio Code"
@@ -55,48 +51,35 @@
   "workExperience": [
     {
       "title": "Administrativo",
-      "company": "Subsecretaria de la Familia de la Municipalidad de la Ciudad de Corrientes",
+      "company": "Subsecretaría de la Familia de la Municipalidad de la Ciudad de Corrientes",
       "date": "Nov. 2023 - Jun. 2024 · 8 meses",
-      "modality": "Presencial",
+      "modality": "Presencial - Jornada Parcial",
       "workplace": "Corrientes, Argentina",
       "country": "Argentina",
       "description": [
         "Pasantía laboral (8 meses) en el marco del programa E.T.P (Entrenamiento Para el Trabajo Público). Desempeño de tareas administrativas: carga y digitalización de expedientes, carga de base de datos, entre otras."
       ],
-      "tasks": "",
+      "tasks": [
+        "Carga y digitalización de expedientes.",
+        "Carga de base de datos."
+      ],
       "infoLink": ""
     },
     {
       "title": "Administrativo",
       "company": "Dirección General de Discapacidad e Inclusión Social de la Municipalidad de la Ciudad de Corrientes",
       "date": "Jun. 2022 - Ene. 2023 · 8 meses",
-      "modality": "Presencial",
+      "modality": "Presencial - Jornada Parcial",
       "workplace": "Corrientes, Argentina",
       "country": "Argentina",
       "description": [
         "Desempeño de tareas administrativas: carga y digitalización de expedientes, carga de base de datos, entre otras."
       ],
-      "tasks": "",
-      "infoLink": ""
-    },
-    {
-      "title": "Desarrollador de Videojuegos",
-      "company": "SuSTI - Subsecretaría de Sistemas y Tecnologías de la Información",
-      "date": "Feb. 2023 - Actualidad",
-      "modality": "Presencial - Jornada Parcial",
-      "workplace": "Corrientes, Argentina",
-      "country": "Argentina",
-      "description": [
-        "La SuSTI es un ente gubernamental dependiente del Ministerio de Hacienda de la Provincia de Corrientes. Nuestro objetivo es exportar la cultura correntina a través de los videojuegos y contribuir a la sociedad con soluciones didácticas."
-      ],
       "tasks": [
-        "Desarrollar videojuegos 2D, 3D y de Realidad Virtual en Unity con .NET C#.",
-        "Redactar informes tipo: Game Concept, Game Treatment y Game Design Document (GDD).",
-        "Operar y realizar mantenimiento de impresoras 3D.",
-        "Liderar equipos de desarrollo utilizando metodología Kanban.",
-        "Organizar y gestionar equipos de atención al público y logística para eventos."
+        "Carga y digitalización de expedientes.",
+        "Carga de base de datos."
       ],
-      "infoLink": "ola"
+      "infoLink": ""
     }
   ],
   "certificates": [
