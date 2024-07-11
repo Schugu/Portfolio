@@ -7,7 +7,7 @@ interface OptionType {
   label: JSX.Element;
 }
 
-const ChangeLanguage: React.FC = () => {
+const ChangeLanguage = ({ tabIndex }: {tabIndex: number}) => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (selectedOption: OptionType | null) => {
@@ -55,11 +55,11 @@ const ChangeLanguage: React.FC = () => {
     }),
     indicatorSeparator: (provided) => ({
       ...provided,
-      backgroundColor: "var(--color-text)" 
+      backgroundColor: "var(--color-text)"
     }),
     dropdownIndicator: (provided, state) => ({
       ...provided,
-      color: state.isFocused ? "var(--color-primary)" : "var(--color-text)", 
+      color: state.isFocused ? "var(--color-primary)" : "var(--color-text)",
       '&:hover': {
         color: "var(--color-primary)"
       }
@@ -97,6 +97,7 @@ const ChangeLanguage: React.FC = () => {
       onChange={changeLanguage}
       aria-label="Select language"
       className="w-fit"
+      tabIndex={tabIndex}
     />
   );
 };
