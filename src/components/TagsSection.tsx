@@ -7,7 +7,7 @@ const TagOpen = ({ section }: TagOpenProps) => {
     <div className="flex flex-col text-sm sm:text-2xl">
       <p className="text-[var(--color-primary)]">
         <span className="text-[var(--color-secondary)]">const </span>
-        <span tabIndex={6} className="text-[var(--color-text)]">{section}</span>
+        <span tabIndex={2} className="text-[var(--color-text)]">{section}</span>
         <span className="text-[var(--color-secondary)]"> = </span>
         {`()`}
         <span className="text-[var(--color-secondary)]">{` => `}</span>
