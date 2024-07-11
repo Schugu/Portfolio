@@ -30,20 +30,26 @@ export default function Home() {
               {dataProfile.titles?.map((_, index) => (
                 <Subtitle string={t(`profile:titles.${index}`)} tabIndex={9} key={index} />
               ))}
-              <Subtitle string={t("profile:years")} tabIndex={9} />
-              <Tooltip text={dataProfile.nationality}>
-                <Flag nationality={dataProfile.nationality.toLowerCase()} tabIndex={10} />
-              </Tooltip>
+              {dataProfile.years &&
+                <Subtitle string={t("profile:years")} tabIndex={9} />
+              }
+              {dataProfile.nationality &&
+                <Tooltip text={dataProfile.nationality}>
+                  <Flag nationality={dataProfile.nationality?.toLowerCase()} tabIndex={10} />
+                </Tooltip>
+              }
             </section>
           </div>
 
           <div className="w-full flex flex-col justify-center items-center
                           md:flex-row md:justify-center md:items-center gap-[4vw]">
 
-            <div className="h-auto w-auto aspect-square flex justify-center items-center">
-              <ContImg shape="circle" src={dataProfile.profilePicture} />
-            </div>
-            
+            {dataProfile.profilePicture &&
+              <div className="h-auto w-auto aspect-square flex justify-center items-center">
+                <ContImg shape="circle" src={dataProfile.profilePicture} />
+              </div>
+            }
+
             <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-5 md:gap-10">
               {dataProfile.linksSocialNetworks &&
                 <section className="flex flex-wrap gap-0.5 md:gap-4 items-center md:items-start">
