@@ -30,8 +30,8 @@ const Projects: React.FC = () => {
               <p className="text-3xl font-bold text-[var(--color-primary)]" tabIndex={3}>{approach}</p>
               <section className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-3">
                 {projects.map((project) => (
-                  <Suspense fallback={<div className="w-full h-72 border-2 border-[var(--color-border)] shadow-[var(--color-border)] bg-[var(--color-colorOpacity)]"></div>}>
-                    <Card key={"project" + project.id} project={project} tabIndex={3}/>
+                  <Suspense key={"project" + project.id} fallback={<div className="w-full h-72 border-2 border-[var(--color-border)] shadow-[var(--color-border)] bg-[var(--color-colorOpacity)]"></div>}>
+                    <Card project={project} tabIndex={3} />
                   </Suspense>
                 ))}
               </section>
