@@ -6,7 +6,8 @@
     "experience": "Experience",
     "education": "Diplomas and Certificates",
     "contact": "Contact",
-    "changeTheme": "Change theme"
+    "changeTheme": "Change theme",
+    "nameNotAvailable": "Name not available"
   },
   "homePage": {
     "section": "Presentation",
@@ -72,5 +73,6 @@
   "modal": {
     "close": "Close",
     "link": "View more"
-  }
+  },
+  "infoNotAvailable": "Information not available."
 }

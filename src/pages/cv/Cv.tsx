@@ -9,8 +9,8 @@ export default function Cv() {
 
   return (
     <SectionCard sectionTitle={t("global:cv.section")}>
-      {!loading && !dataProfile && <p>No hay información disponible.</p>}
       {loading && <SkeletonUniversal />}
+      {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile?.linksSocialNetworks?.CV &&
         <article className="w-full h-full flex flex-col gap-2 p-2">

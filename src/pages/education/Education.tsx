@@ -10,8 +10,8 @@ export default function Education() {
 
   return (
     <SectionCard sectionTitle={t("global:education.section")}>
-      {!loading && !dataProfile && <p>No hay información disponible.</p>}
       {loading && <SkeletonUniversal />}
+      {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile?.certificates && (
         

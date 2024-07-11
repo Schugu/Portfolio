@@ -21,7 +21,7 @@ export default function Navbar() {
      flex flex-wrap items-center justify-between lg:justify-around
      bg-[var(--color-background-dark)] text-[var(--color-text)]">
 
-      <p tabIndex={1} className="text-center text-sm md:text-xl text-[var(--color-primary)]">{dataProfile?.fullname ?? 'Nombre no disponible'}</p>
+      <p tabIndex={1} className="text-center text-sm md:text-xl text-[var(--color-primary)]">{dataProfile?.fullname ?? t("global:navbar.nameNotAvailable")}</p>
 
       <div className="lg:hidden">
         <button

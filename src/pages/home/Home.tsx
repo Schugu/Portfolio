@@ -14,8 +14,8 @@ export default function Home() {
 
   return (
     <SectionCard sectionTitle={t("global:homePage.section")}>
-      {!loading && !dataProfile && <p>No hay información disponible.</p>}
       {loading && <SkeletonUniversal />}
+      {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile && (
         <article className="w-full flex flex-col justify-center items-center gap-[4vh]">

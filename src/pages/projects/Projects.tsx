@@ -2,7 +2,6 @@ import SectionCard from "@/components/SectionCard";
 import { useProfile } from "@/context/ProfileContext";
 import { lazy, Suspense } from "react";
 import { useTranslation } from 'react-i18next';
-import Skeleton from "./Skeleton";
 import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 
 const Card = lazy(() => import('./Card'));
@@ -13,8 +12,8 @@ const Projects: React.FC = () => {
 
   return (
     <SectionCard sectionTitle={t("global:projects.section")}>
-      {!loading && !dataProjects && <div>No hay proyectos disponibles</div>}
       {loading && <SkeletonUniversal/>}
+      {!loading && !dataProjects && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProjects && dataProjects.approaches &&
 

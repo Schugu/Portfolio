@@ -10,8 +10,8 @@ export default function Experience() {
 
   return (
     <SectionCard sectionTitle={t("global:workExperience.section")}>
-      {!loading && !dataProfile && <p>No hay información disponible.</p>}
       {loading && <SkeletonUniversal />}
+      {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile?.workExperience &&
         <div className="w-full flex flex-col justify-start items-start">
