@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTheme } from '@/context/ThemeContext.tsx';
 import Cookies from 'js-cookie';
 
@@ -8,7 +9,7 @@ interface ThemeContextType {
   setTheme: (theme: Theme | ((prevTheme: Theme) => Theme)) => void;
 }
 
-export default function ChangeTheme() {
+export default function ChangeTheme({ tabIndex }: { tabIndex: number }) {
   const { theme, setTheme } = useTheme() as ThemeContextType;
 
   const handleChangeTheme = () => {
@@ -23,20 +24,28 @@ export default function ChangeTheme() {
     });
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLSpanElement>) => {
+    if (event.key === 'Enter') {
+      handleChangeTheme();
+    }
+  };
+
   return (
     <div
-      tabIndex={5}
       aria-label={`Cambiar de tema, tema actual: ${theme}`}
       onClick={handleChangeTheme}
+      onKeyDown={handleKeyDown}
       className="cursor-pointer select-none flex justify-center items-center"
+      tabIndex={tabIndex}
     >
       <span
         aria-hidden='true'
         className={`w-6 h-6 md:w-7 md:h-7 hover:text-[var(--color-primary)]
-        ${theme === 'light'
+          ${theme === 'light'
             ? 'icon-[tdesign--mode-light]'
             : 'icon-[tdesign--mode-dark] '}
-        `}></span>
+        `}
+      ></span>
     </div>
   );
 }
