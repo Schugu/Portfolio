@@ -23,7 +23,8 @@
       "ides": "IDEs"
     },
     "aboutMe": "About me",
-    "hobbies": "Hobbies"
+    "hobbies": "Hobbies",
+    "profilePicture": "Profile picture"
   },
   "projects": {
     "section": "Projects",
@@ -74,5 +75,6 @@
     "close": "Close",
     "link": "View more"
   },
+  "nationality": "Nationality",
   "infoNotAvailable": "Information not available."
 }

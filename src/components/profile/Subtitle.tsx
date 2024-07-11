@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 interface SubtitleProps {
   string: string;
@@ -14,7 +15,7 @@ const Subtitle = ({ string, tabIndex }: SubtitleProps) => {
                     rounded-lg border-2 
                   border-[var(--color-primary)] shadow-[var(--color-primary)] bg-[var(--color-colorOpacity)]
                   "
-    tabIndex={tabIndex}
+      tabIndex={tabIndex}
     >
       {string}
     </p>
@@ -22,6 +23,8 @@ const Subtitle = ({ string, tabIndex }: SubtitleProps) => {
 }
 
 const Flag = ({ nationality, tabIndex }: FlagProps) => {
+  const { t } = useTranslation(['global']);
+
   const [icono, setIcono] = useState('');
 
   useEffect(() => {
@@ -37,7 +40,7 @@ const Flag = ({ nationality, tabIndex }: FlagProps) => {
     <div className="w-9 h-7 md:w-16 md:h-14 flex place-items-center px-2 rounded-lg border-2 
                     border-[var(--color-primary)] shadow-[var(--color-primary)] bg-[var(--color-colorOpacity)]
                    "
-    tabIndex={tabIndex} aria-label={`Nacionalidad: ${nationality}`}
+      tabIndex={tabIndex} aria-label={`${t("global:nationality")}: ${nationality}`}
     >
       <span className={`w-full h-full ${icono}`} />
     </div>

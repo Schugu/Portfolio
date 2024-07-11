@@ -1,6 +1,7 @@
 interface ContImgProps {
   src: string;
   shape: "square" | "circle";
+  alt?: string;
 }
 
 export default function ContImg({ src, shape }: ContImgProps) {

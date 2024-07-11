@@ -46,7 +46,11 @@ export default function Home() {
 
             {dataProfile.profilePicture &&
               <div className="h-auto w-auto aspect-square flex justify-center items-center">
-                <ContImg shape="circle" src={dataProfile.profilePicture} />
+                <ContImg shape="circle"
+                  src={dataProfile.profilePicture}
+                  alt={t("global:homePage.profilePicture")}
+                  tabIndex={7}
+                />
               </div>
             }
 
