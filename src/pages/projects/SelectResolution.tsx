@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useTranslation } from 'react-i18next';
 
 interface SelectResolutionProps {
   children: ReactNode;
@@ -9,6 +10,8 @@ interface SelectResolutionProps {
 }
 
 export default function SelectResolution({ children, onClick, device, resolution, tabIndex }: SelectResolutionProps) {
+  const { t } = useTranslation(['global']);
+  
   const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'Enter' && onClick) {
       onClick();
@@ -28,7 +31,7 @@ export default function SelectResolution({ children, onClick, device, resolution
       onClick={onClick}
       onKeyDown={handleKeyPress}
       tabIndex={tabIndex}
-      aria-label={device}
+      aria-label={t(`global:projects.device.${resolution}`)}
       role="button"
     >
       {children}
