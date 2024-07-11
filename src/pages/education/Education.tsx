@@ -11,7 +11,7 @@ export default function Education() {
   return (
     <SectionCard sectionTitle={t("global:education.section")}>
       {loading && <SkeletonUniversal />}
-      {!loading && !dataProfile && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
+      {!loading && !dataProfile && <p className="text-3xl text-center" tabIndex={3}>{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProfile?.certificates && (
 
@@ -19,7 +19,7 @@ export default function Education() {
           {handleImageClick => (
             <article className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-4">
               {dataProfile.certificates?.map((certificate, index) => (
-                <div key={index}
+                <div key={index} 
                   onClick={() =>
                     handleImageClick(
                       `/profile/education/${index + 1}.jpg`,
@@ -31,7 +31,7 @@ export default function Education() {
                     className='transform hover:scale-110 transition duration-300 cursor-pointer
                     border-2 border-[var(--color-border-complementary)] rounded overflow-hidden'
                     src={`/profile/education/${index + 1}.jpg`}
-                    alt={`Screenshot ${index + 1}`}
+                    alt={`Screenshot ${index + 1}`} tabIndex={4} 
                   />
                 </div>
               ))}
