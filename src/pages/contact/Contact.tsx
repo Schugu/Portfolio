@@ -44,6 +44,7 @@ export default function Contact() {
             <label
               htmlFor="website-admin"
               className="text-xl font-medium"
+              tabIndex={3}
             >
               {t("global:contact.fullname")}
             </label>
@@ -65,12 +66,13 @@ export default function Contact() {
                 bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
                 outline-none ring-0 border-2 border-transparent focus:border-[var(--color-border)]"
                 placeholder="Jon Doe"
+                tabIndex={3}
               />
             </div>
 
             {
               errors.user_name && (
-                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.fullnameError")}</p>
+                <p tabIndex={3} className="text-sm text-[var(--color-error-text)]">{t("global:contact.fullnameError")}</p>
               )
             }
           </section>
@@ -78,6 +80,7 @@ export default function Contact() {
           <section className="w-full flex flex-col gap-1">
             <label htmlFor="email-address-icon"
               className="text-xl font-medium"
+              tabIndex={4}
             >
               {t("global:contact.email")}
             </label>
@@ -98,12 +101,13 @@ export default function Contact() {
                 bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
                 outline-none ring-0 border-2 border-transparent focus:border-[var(--color-border)]"
                 placeholder="Jon@doe.com"
+                tabIndex={4}
               />
             </div>
 
             {
               errors.user_email && (
-                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.emailError")}</p>
+                <p tabIndex={4} className="text-sm text-[var(--color-error-text)]">{t("global:contact.emailError")}</p>
               )
             }
           </section>
@@ -112,6 +116,7 @@ export default function Contact() {
             <label
               htmlFor="message"
               className="text-xl font-medium"
+              tabIndex={5}
             >
               {t("global:contact.message")}
             </label>
@@ -126,15 +131,17 @@ export default function Contact() {
               bg-[var(--color-form-background-one)] text-[var(--color-text)] placeholder-[var(--color-form-placeholder)]
               focus:border-[var(--color-border)]
               `}
+              tabIndex={5}
             />
             {
               errors.message && (
-                <p tabIndex={6} className="text-sm text-[var(--color-error-text)]">{t("global:contact.messageError")}</p>
+                <p tabIndex={5} className="text-sm text-[var(--color-error-text)]">{t("global:contact.messageError")}</p>
               )
             }
           </section>
 
           <button
+            tabIndex={6}
             type="submit"
             className={`w-full text-[var(--color-form-button-text)] font-semibold rounded-lg text-base px-5 py-2.5
             ${submitSuccess ? 'bg-[var(--color-form-button-sent)]' : 'bg-[var(--color-form-button-background)] hover:bg-[var(--color-form-button-hover)]'}`}
@@ -146,7 +153,7 @@ export default function Contact() {
 
         <article className='w-full md:w-1/2 flex flex-col items-center gap-2  order-1 md:order-2'>
           <div className='flex flex-col items-center gap-2'>
-            <p className='text-center text-2xl text-[var(--color-primary)]'>{t("global:contact.titleText")}</p>
+            <p className='text-center text-2xl text-[var(--color-primary)]' tabIndex={7}>{t("global:contact.titleText")}</p>
 
             {loading && <p className='text-center text-xl' tabIndex={8}>{t("global:contact.textLoading")}</p>}
             {!loading && !dataProfile && <p className='text-center text-xl' tabIndex={8}>{t("global:infoNotAvailable")}</p>}
@@ -154,7 +161,7 @@ export default function Contact() {
             {
               !loading && dataProfile && (
                 dataProfile.textContact?.map((_, index) => (
-                  <p className='text-center md:text-left text-balance text-xl' key={"paragraph" + index}>
+                  <p className='text-center md:text-left text-balance text-xl' key={"paragraph" + index} tabIndex={9}>
                     {t(`profile:textContact.${index}`)}
                   </p>
                 )))
