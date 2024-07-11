@@ -12,14 +12,12 @@ const Projects: React.FC = () => {
 
   return (
     <SectionCard sectionTitle={t("global:projects.section")}>
-      {loading && <SkeletonUniversal/>}
+      {loading && <SkeletonUniversal />}
       {!loading && !dataProjects && <p className="text-3xl text-center">{t("global:infoNotAvailable")}</p>}
 
       {!loading && dataProjects && dataProjects.approaches &&
-
         <article className="flex flex-col gap-10">
           {Object.entries(dataProjects.approaches).map(([approach, projects], index) => (
-
             projects.length > 0 &&
             <div className={`flex flex-col gap-4 pb-12 
               ${Object.keys(dataProjects.approaches).length > 1
