@@ -9,8 +9,8 @@ export default function Footer() {
     bg-[var(--color-background-dark)] text-[var(--color-text)]">
       <div className='flex gap-2 items-center text-lg justify-center' tabIndex={999999}>
         <p className="text-center">{t("global:footer.template1")}</p>
-        <span className="w-6 h-6 text-red-500 icon-[gravity-ui--card-heart]" />
-        <p className='text-center'>{t("global:footer.template2")}</p>
+        <span className="w-6 h-6 text-red-500 icon-[gravity-ui--card-heart]" aria-label={t("global:footer.template2")}/>
+        <p className='text-center'>{t("global:footer.template3")}</p>
       </div>
       <Tooltip text='Github'>
         <a href="https://github.com/Schugu" target="_blank" aria-label='Github'

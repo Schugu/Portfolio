@@ -70,7 +70,8 @@
   },
   "footer": {
     "template1": "Template made with",
-    "template2": "by Leandro Schugurensky"
+    "template2": "love",
+    "template3": "by Leandro Schugurensky"
   },
   "modal": {
     "close": "Close",
