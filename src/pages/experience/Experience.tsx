@@ -21,7 +21,7 @@ export default function Experience() {
                 key={"work" + index}
                 index={index}
                 work={work}
-                tabIndex={3 + index}
+                tabIndex={4 + index}
               />
             ))
           }
