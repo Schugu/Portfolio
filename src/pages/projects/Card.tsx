@@ -33,7 +33,7 @@ export default function Card({ project, tabIndex }: CardProps) {
     >
       <img
         src={`/projects/${project.id}/frontPage.png`}
-        alt="Portada del proyecto"
+        alt={t("global:projects.projectCover")}
         className={`w-full h-auto object-cover transition-all duration-[0.3s] ${isVisible ? 'blur-lg transform scale-125' : ''}`}
       />
 
@@ -48,7 +48,7 @@ export default function Card({ project, tabIndex }: CardProps) {
           {project.title}
         </p>
 
-        <section className='w-full flex justify-center items-center flex-wrap gap-2'>
+        <section className='w-full flex justify-center items-center flex-wrap gap-2' aria-hidden>
           {project.techs.map((tech, index) => (
             <Tooltip text={tech} key={`${project.id}-${tech}-${index}`}>
               <IconosTechs tech={tech} color='text-CREMA' />

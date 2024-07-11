@@ -42,7 +42,8 @@
       "tablet": "Tablet"
     },
     "projectNotFound" : "Projeto não encontrado.",
-    "projectLoading" : "Carregando..." 
+    "projectLoading" : "Carregando...",
+    "projectCover": "Capa do projeto" 
   },
   "cv":{
     "section":"Currículo"
