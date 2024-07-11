@@ -2,6 +2,7 @@ import SectionCard from "@/components/SectionCard.tsx";
 import { useProfile } from "@/context/ProfileContext.tsx";
 import { useTranslation } from 'react-i18next';
 import ImgModal from "@/components/ImgModal.tsx";
+import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 
 export default function Education() {
   const { dataProfile, loading } = useProfile();
@@ -9,8 +10,8 @@ export default function Education() {
 
   return (
     <SectionCard sectionTitle={t("global:education.section")}>
-      {loading && <p>Cargando...</p>}
       {!loading && !dataProfile && <p>No hay información disponible.</p>}
+      {loading && <SkeletonUniversal />}
 
       {!loading && dataProfile?.certificates && (
         

@@ -6,6 +6,7 @@ import IconosTechs from "@/components/IconosTechs.tsx";
 import { useProfile } from "@/context/ProfileContext.tsx";
 import { useTranslation } from 'react-i18next';
 import ContImg from "./ContImg.tsx";
+import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 
 export default function Home() {
   const { t } = useTranslation(['global', 'profile', 'projects']);
@@ -13,8 +14,8 @@ export default function Home() {
 
   return (
     <SectionCard sectionTitle={t("global:homePage.section")}>
-      {loading && <p>Cargando...</p>}
       {!loading && !dataProfile && <p>No hay información disponible.</p>}
+      {loading && <SkeletonUniversal />}
 
       {!loading && dataProfile && (
         <article className="w-full flex flex-col justify-center items-center gap-[4vh]">

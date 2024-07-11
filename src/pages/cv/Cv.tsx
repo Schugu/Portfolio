@@ -1,6 +1,7 @@
 import SectionCard from "@/components/SectionCard.tsx";
 import { useTranslation } from 'react-i18next';
 import { useProfile } from "@/context/ProfileContext.tsx";
+import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 
 export default function Cv() {
   const { dataProfile, loading } = useProfile();
@@ -8,8 +9,8 @@ export default function Cv() {
 
   return (
     <SectionCard sectionTitle={t("global:cv.section")}>
-      {loading && <p>Cargando...</p>}
       {!loading && !dataProfile && <p>No hay información disponible.</p>}
+      {loading && <SkeletonUniversal />}
 
       {!loading && dataProfile?.linksSocialNetworks?.CV &&
         <article className="w-full h-full flex flex-col gap-2 p-2">

@@ -10,6 +10,7 @@ import { ProjectType } from '@/types/ProfileContextTypes.ts';
 import ViewRepository from "@/components/buttons/ViewRepository.tsx";
 import ViewDemo from "@/components/buttons/ViewDemo.tsx";
 import ImgModal from "@/components/ImgModal.tsx"
+import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 type DeviceType = 'cellphone' | 'tablet' | 'desktop';
 
 type NewProjectType = ProjectType & {
@@ -49,7 +50,7 @@ export default function Project() {
   if (loading) {
     return (
       <SectionCard sectionTitle={t("global:projects.section")}>
-        <p tabIndex={7} className="text-2xl">{t("global:projects.projectLoading")}</p>
+        <SkeletonUniversal />
       </SectionCard>
     );
   }
