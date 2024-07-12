@@ -8,7 +8,7 @@ export const darkThemeColors = {
     DEFAULT: "#2196f3",
   },
   border: {
-    first: "#ffd750",
+    first: "#ffcc50",
     second: "#2196f3",
   },
   text: {
