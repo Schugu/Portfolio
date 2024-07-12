@@ -24,7 +24,7 @@ function App() {
       <ThemeProvider>
         <ProfileProvider>
           <I18nextProvider i18n={i18next}>
-            <main className='flex flex-col min-h-screen bg-[var(--color-background-light)] text-[var(--color-text)]'>
+            <main className='flex flex-col min-h-screen bg-[var(--color-background-second)] text-[var(--color-text-first)]'>
               <Navbar />
 
               <section className='flex-grow'>
