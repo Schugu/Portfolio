@@ -36,7 +36,7 @@ const SocialNetworkIcon = ({ socialNetwork, link, tabIndex }: SocialNetworkProps
 
   return (
     <a href={link} target="_blank"
-      className={`flex justify-center items-center p-1 rounded-xl transition-colors duration-100 ease-in-out
+      className={`flex justify-center items-center p-1 rounded-xl hoverAnimation
                   border-2 border-transparent hover:border-[var(--color-primary-first)]
                   shadow hover:shadow-[var(--color-primary-first)] 
                   hover:bg-[var(--color-colorOpacity)]
