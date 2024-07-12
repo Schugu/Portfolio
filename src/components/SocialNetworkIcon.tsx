@@ -37,8 +37,8 @@ const SocialNetworkIcon = ({ socialNetwork, link, tabIndex }: SocialNetworkProps
   return (
     <a href={link} target="_blank"
       className={`flex justify-center items-center p-1 rounded-xl transition-colors duration-100 ease-in-out
-                  border-2 border-transparent hover:border-[var(--color-primary)]
-                  shadow hover:shadow-[var(--color-primary)] 
+                  border-2 border-transparent hover:border-[var(--color-primary-first)]
+                  shadow hover:shadow-[var(--color-primary-first)] 
                   hover:bg-[var(--color-colorOpacity)]
                 `}
       tabIndex={tabIndex} aria-label={`${socialNetwork}`}
