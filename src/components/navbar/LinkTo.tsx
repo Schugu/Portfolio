@@ -12,7 +12,7 @@ export default function LinkTo({ to, label, tabIndex }: LinkToProps) {
     <Link
       tabIndex={tabIndex}
       to={to}
-      className={`w-fit rounded px-1 py-0.5 border-2 flex justify-center items-center gap-1 transition-colors duration-300 ease-in-out
+      className={`w-fit rounded px-1 py-0.5 border-2 flex justify-center items-center gap-1 hoverAnimation
           ${location.pathname === to
           ? 'border-[var(--color-primary-first)] text-[var(--color-primary-first)]'
           : 'border-transparent text-[var(--color-text-first)]'}
