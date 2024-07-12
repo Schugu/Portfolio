@@ -67,7 +67,7 @@ export default function Project() {
   return (
     <SectionCard sectionTitle={`${t("global:projects.section")}["${project?.title ?? t("global:projects.projectNotFound")}"]`}>
       <div className="w-full h-full flex flex-col gap-2 p-2">
-        <section className="w-full flex flex-wrap justify-center gap-4 p-4 rounded-lg bg-[var(--color-background)]">
+        <section className="w-full flex flex-wrap justify-center gap-4 p-4 rounded-lg bg-[var(--color-background-third)]">
           <article className='w-full flex flex-col'>
             <div className="w-full flex justify-between items-center">
               <Tooltip text={t("global:projects.back")} position='right'>
@@ -75,7 +75,7 @@ export default function Project() {
                   aria-label={t("global:projects.back")}
                   tabIndex={3}
                   className='flex justify-center items-center border-2 border-transparent py-1 px-1.5 rounded 
-                  hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primaryOpacity)]'
+                  hover:text-[var(--color-primary-first)] hover:border-[var(--color-primary-first)] hover:bg-[var(--color-primaryOpacity)]'
                 >
                   <span className="w-7 h-7 md:w-9 md:h-9 icon-[tdesign--enter]" />
                 </Link>
@@ -91,7 +91,7 @@ export default function Project() {
             </div>
 
             <div className='w-full flex flex-col gap-6'>
-              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border)] mb-2" tabIndex={5}>{project.title}</p>
+              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border-first)] mb-2" tabIndex={5}>{project.title}</p>
               <p tabIndex={6} className="indent-8 text-lg md:text-xl">{t(`projects:approaches.${project.approach}.${projectIndex}.description`)}</p>
 
               {project.moreInfo.map((_, pIndex) => (
@@ -103,7 +103,7 @@ export default function Project() {
           </article>
 
           <article className='w-full flex flex-col items-center gap-4'>
-            <p tabIndex={8} className="w-full text-center text-xl md:text-2xl text-[var(--color-primary)]">{t("global:projects.technologies")}:</p>
+            <p tabIndex={8} className="w-full text-center text-xl md:text-2xl text-[var(--color-primary-first)]">{t("global:projects.technologies")}:</p>
             <div className="flex gap-2 flex-wrap justify-center">
               {project.techs.map((tech) => (
                 <Techs key={tech} tech={tech} tabIndex={9} />
@@ -161,7 +161,7 @@ export default function Project() {
                       `}
                     >
                       <img
-                        className="w-full h-auto border-2 border-[var(--color-border)] cursor-pointer"
+                        className="w-full h-auto border-2 border-[var(--color-border-first)] cursor-pointer"
                         src={`/projects/${project.id}/screenshots/${device}/${index + 1}.png`}
                         alt={t("global:projects.screenshot") + (index + 1)}
                         tabIndex={13}
