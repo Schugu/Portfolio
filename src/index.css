@@ -11,3 +11,9 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@layer utilities {
+  .hoverAnimation {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
