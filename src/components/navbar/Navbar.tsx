@@ -19,14 +19,14 @@ export default function Navbar() {
   return (
     <nav className="w-full min-h-12 p-2 gap-2 
      flex flex-wrap items-center justify-between lg:justify-around
-     bg-[var(--color-background-dark)] text-[var(--color-text)]">
+     bg-[var(--color-background-first)] text-[var(--color-text-first)]">
 
-      <p tabIndex={1} className="text-center text-sm md:text-xl text-[var(--color-primary)]">{dataProfile?.fullname ?? t("global:navbar.nameNotAvailable")}</p>
+      <p tabIndex={1} className="text-center text-sm md:text-xl text-[var(--color-primary-first)]">{dataProfile?.fullname ?? t("global:navbar.nameNotAvailable")}</p>
 
       <div className="lg:hidden">
         <button
           tabIndex={1}
-          className="flex items-center text-[var(--color-primary)]"
+          className="flex items-center text-[var(--color-primary-first)]"
           onClick={toggleMenu}
         >
           {
@@ -40,8 +40,8 @@ export default function Navbar() {
         lg:flex lg:items-center lg:justify-center lg:flex-wrap lg:gap-4 p-2 
         max-lg:absolute max-lg:right-0 max-lg:top-12 max-lg:z-10
         w-full sm:w-1/2 md:w-auto rounded
-        bg-[var(--color-background-dark)] text-[var(--color-text)]
-        max-lg:border-2 max-lg:border-[var(--color-primary)]`
+        bg-[var(--color-background-first)] text-[var(--color-text-first)]
+        max-lg:border-2 max-lg:border-[var(--color-primary-first)]`
       }>
 
 
