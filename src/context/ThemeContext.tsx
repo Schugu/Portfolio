@@ -68,35 +68,32 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      {/* Aquí se pueden incluir las variables CSS para los colores del tema */}
       <style>
         {`
           :root {
-            --color-primary: ${themeColors.primary.DEFAULT};
-            --color-primary-light: ${themeColors.primary.light};
-            --color-primary-dark: ${themeColors.primary.dark};
-            --color-primary-extraLight: ${themeColors.primary.extraLight};
-            --color-secondary: ${themeColors.secondary.DEFAULT};
-            --color-secondary-light: ${themeColors.secondary.light};
-            --color-secondary-dark: ${themeColors.secondary.dark};
-            --color-secondary-both: ${themeColors.secondary.both};
-            --color-background: ${themeColors.background.DEFAULT};
-            --color-background-light: ${themeColors.background.light};
-            --color-background-extraLight: ${themeColors.background.extraLight};
-            --color-background-dark: ${themeColors.background.dark};
-            --color-background-both: ${themeColors.background.both};
-            --color-text: ${themeColors.text.DEFAULT};
-            --color-text-dark: ${themeColors.text.dark};
-            --color-text-light: ${themeColors.text.light};
-            --color-text-both: ${themeColors.text.both};
-            --color-text-complementary: ${themeColors.text.complementary};
-            --color-border: ${themeColors.border.DEFAULT};
-            --color-border-light: ${themeColors.border.light};
-            --color-border-dark: ${themeColors.border.dark};
-            --color-border-complementary: ${themeColors.border.complementary};
+            --color-primary-first: ${themeColors.primary.first};
+            --color-primary-second: ${themeColors.primary.second};
+            --color-primary-third: ${themeColors.primary.third};
+            
+            --color-secondary-first: ${themeColors.secondary.DEFAULT};
+
+            --color-border-first: ${themeColors.border.first};
+            --color-border-second: ${themeColors.border.second};
+
+            --color-text-first: ${themeColors.text.first};
+            --color-text-second: ${themeColors.text.second};
+            --color-text-third: ${themeColors.text.third};
+
+            --color-background-first: ${themeColors.background.first};
+            --color-background-second: ${themeColors.background.second};
+            --color-background-third: ${themeColors.background.third};
+            --color-background-fourth: ${themeColors.background.fourth};
+
             --color-colorOpacity: ${themeColors.colorOpacity};
             --color-primaryOpacity: ${themeColors.primaryOpacity};
+
             --color-error-text: ${themeColors.error.text};
+
             --color-form-background-one: ${themeColors.form.background.one};
             --color-form-background-two: ${themeColors.form.background.two};
             --color-form-background-three: ${themeColors.form.background.three};
