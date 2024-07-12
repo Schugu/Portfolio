@@ -5,17 +5,17 @@ interface TagOpenProps {
 const TagOpen = ({ section }: TagOpenProps) => {
   return (
     <div className="flex flex-col text-sm sm:text-2xl">
-      <p className="text-[var(--color-primary)]">
-        <span className="text-[var(--color-secondary)]">const </span>
-        <span tabIndex={2} className="text-[var(--color-text)]">{section}</span>
-        <span className="text-[var(--color-secondary)]"> = </span>
+      <p className="text-[var(--color-primary-first)]">
+        <span className="text-[var(--color-secondary-first)]">const </span>
+        <span tabIndex={2} className="text-[var(--color-text-first)]">{section}</span>
+        <span className="text-[var(--color-secondary-first)]"> = </span>
         {`()`}
-        <span className="text-[var(--color-secondary)]">{` => `}</span>
+        <span className="text-[var(--color-secondary-first)]">{` => `}</span>
         {`{`}
       </p>
 
-      <p className="indent-5 text-[var(--color-text)]">
-        <span className="text-[var(--color-secondary)]">return </span>
+      <p className="indent-5 text-[var(--color-text-first)]">
+        <span className="text-[var(--color-secondary-first)]">return </span>
         {`(`}
       </p>
     </div>
@@ -25,12 +25,12 @@ const TagOpen = ({ section }: TagOpenProps) => {
 const TagClose = () => {
   return (
     <div className="flex flex-col text-sm sm:text-2xl">
-      <p className="indent-5 text-[var(--color-text)]">
+      <p className="indent-5 text-[var(--color-text-first)]">
         {`)`}
       </p>
-      <p className="text-[var(--color-primary)]">
+      <p className="text-[var(--color-primary-first)]">
         {`}`}
-        <span className="text-[var(--color-secondary)]">;</span>
+        <span className="text-[var(--color-secondary-first)]">;</span>
       </p>
     </div>
   )
