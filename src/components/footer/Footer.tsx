@@ -14,13 +14,13 @@ export default function Footer() {
       </div>
       <Tooltip text='Github'>
         <a href="https://github.com/Schugu" target="_blank" aria-label='Github'
-          className="flex justify-center items-center hover:text-[var(--color-primary-first)]">
+          className="flex justify-center items-center hover:text-[var(--color-primary-first)] hoverAnimation">
           <span className="w-6 h-6 icon-[mdi--github]" />
         </a>
       </Tooltip>
       <Tooltip text='Linkedin'>
         <a href="https://www.linkedin.com/in/leandrodanielschugurensky/" target="_blank" aria-label='Linkedin'
-          className="flex justify-center items-center hover:text-[var(--color-primary-first)]">
+          className="flex justify-center items-center hover:text-[var(--color-primary-first)] hoverAnimation">
           <span className="w-6 h-6 icon-[mdi--linkedin]" />
         </a>
       </Tooltip>
