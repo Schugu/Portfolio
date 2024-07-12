@@ -38,49 +38,49 @@ const ChangeLanguage = ({ tabIndex }: {tabIndex: number}) => {
   const customStyles: StylesConfig<OptionType, false> = {
     control: (provided, state) => ({
       ...provided,
-      color: "var(--color-text)",
+      color: "var(--color-text-first)",
       cursor: 'pointer',
-      backgroundColor: "var(--color-background-dark)",
-      border: `2px solid ${state.isFocused ? 'var(--color-primary)' : 'transparent'}`,
+      backgroundColor: "var(--color-background-first)",
+      border: `2px solid ${state.isFocused ? 'var(--color-primary-first)' : 'transparent'}`,
       fontSize: '1.25rem',
       boxShadow: 'none',
       '&:hover': {
-        backgroundColor: "var(--color-background-light)",
-        border: "2px solid var(--color-primary)",
+        backgroundColor: "var(--color-background-second)",
+        border: "2px solid var(--color-primary-first)",
       }
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: "var(--color-text)",
+      color: "var(--color-text-first)",
     }),
     indicatorSeparator: (provided) => ({
       ...provided,
-      backgroundColor: "var(--color-text)"
+      backgroundColor: "var(--color-text-first)"
     }),
     dropdownIndicator: (provided, state) => ({
       ...provided,
-      color: state.isFocused ? "var(--color-primary)" : "var(--color-text)",
+      color: state.isFocused ? "var(--color-primary-first)" : "var(--color-text-first)",
       '&:hover': {
-        color: "var(--color-primary)"
+        color: "var(--color-primary-first)"
       }
     }),
     option: (provided, state) => ({
       ...provided,
-      color: "var(--color-text)",
+      color: "var(--color-text-first)",
       cursor: 'pointer',
-      backgroundColor: state.isFocused ? "var(--color-background-light)" : "transparent",
+      backgroundColor: state.isFocused ? "var(--color-background-second)" : "transparent",
       '&:hover': {
-        backgroundColor: "var(--color-background-light)",
+        backgroundColor: "var(--color-background-second)",
       }
     }),
     menu: (provided) => ({
       ...provided,
-      color: "var(--color-text)",
-      backgroundColor: "var(--color-background)",
+      color: "var(--color-text-first)",
+      backgroundColor: "var(--color-background-first)",
       borderRadius: '5px',
-      boxShadow: '0 0 4px var(--color-primary)',
+      boxShadow: '0 0 4px var(--color-primary-first)',
       cursor: 'pointer',
-      border: "2px solid var(--color-primary)",
+      border: "2px solid var(--color-primary-first)",
     }),
   };
 
