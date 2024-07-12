@@ -75,7 +75,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
             --color-primary-second: ${themeColors.primary.second};
             --color-primary-third: ${themeColors.primary.third};
             
-            --color-secondary-first: ${themeColors.secondary.DEFAULT};
+            --color-secondary-first: ${themeColors.secondary.first};
+            --color-secondary-second: ${themeColors.secondary.second};
 
             --color-border-first: ${themeColors.border.first};
             --color-border-second: ${themeColors.border.second};
@@ -94,6 +95,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
             --color-error-text: ${themeColors.error.text};
 
+            --color-form-text: ${themeColors.form.text};
             --color-form-background-one: ${themeColors.form.background.one};
             --color-form-background-two: ${themeColors.form.background.two};
             --color-form-background-three: ${themeColors.form.background.three};
