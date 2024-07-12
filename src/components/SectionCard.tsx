@@ -11,8 +11,8 @@ export default function SectionCard({ sectionTitle, children }: SectionCardProps
 
       <article className="my-6 w-full md:w-11/12 md:pt-4 md:pr-4 md:pb-6 md:pl-7 p-2 
       rounded-md border-2 shadow 
-      bg-[var(--color-background-dark)]
-      border-[var(--color-border)] shadow-[var(--color-border)]">
+      bg-[var(--color-background-first)]
+      border-[var(--color-border-first)] shadow-[var(--color-border-first)]">
 
         <TagOpen section={sectionTitle} />
 
@@ -24,7 +24,7 @@ export default function SectionCard({ sectionTitle, children }: SectionCardProps
           </section>
 
           <section className="min-h-full w-auto my-auto">
-            <p className="hidden md:inline-block text-8xl md:text-9xl font-ubuntu font-normal text-[var(--color-secondary)]">;</p>
+            <p className="hidden md:inline-block text-8xl md:text-9xl font-ubuntu font-normal text-[var(--color-secondary-first)]">;</p>
           </section>
         </div>
 
