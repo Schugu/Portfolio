@@ -10,7 +10,7 @@ export default function ContImg({ src, shape = "circle", alt, tabIndex }: ContIm
     <div className={`w-48 h-48 sm:w-80 sm:h-80
       md:w-full md:h-full 
       ${shape === "circle" ? "rounded-full overflow-hidden" : "rounded"}
-      border-2 border-[var(--color-primary)] bg-gradient-to-b from-[var(--color-secondary)] to-[var(--color-primary)]`}>
+      border-2 border-[var(--color-border-first)] bg-gradient-to-b from-[var(--color-secondary-first)] to-[var(--color-primary-first)]`}>
       <img className="w-full h-full object-cover object-center" src={src} alt={alt} tabIndex={tabIndex} />
     </div>
   );
