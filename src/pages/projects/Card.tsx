@@ -25,7 +25,7 @@ export default function Card({ project, tabIndex }: CardProps) {
   return (
     <div
       key={project.id}
-      className="overflow-hidden relative w-full h-auto border-2 shadow border-[var(--color-border)] shadow-[var(--color-border)]"
+      className="overflow-hidden relative w-full h-auto border-2 shadow border-[var(--color-border-first)] shadow-[var(--color-border-first)]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onKeyDown={() => { setIsVisible(true) }}
@@ -39,10 +39,10 @@ export default function Card({ project, tabIndex }: CardProps) {
 
       <div
         className={`absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-4 p-2
-          bg-black text-[var(--color-text-both)]
+          bg-black text-[var(--color-text-third)]
           transition-all duration-500 ${isVisible ? 'bg-opacity-50 opacity-100' : 'bg-opacity-0 opacity-0'}`}
       >
-        <p className="w-full text-center font-bold text-2xl md:text-3xl border-b-2 border-[var(--color-primary)]"
+        <p className="w-full text-center font-bold text-2xl md:text-3xl border-b-2 border-[var(--color-primary-first)]"
           tabIndex={tabIndex}
         >
           {project.title}
@@ -59,8 +59,8 @@ export default function Card({ project, tabIndex }: CardProps) {
           tabIndex={tabIndex}
           to={`/projects/${project.id}`}
           aria-label={t("global:projects.showMore")}
-          className="flex justify-center items-center text-xl p-1 rounded-2xl w-1/2 border-2 shadow transition-colors duration-100 ease-in-out 
-          border-[var(--color-primary)] shadow-[var(--color-primary)] hover:bg-[var(--color-colorOpacity)]"
+          className="flex justify-center items-center text-xl p-1 rounded-2xl w-1/2 border-2 shadow hoverAnimation
+          border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] hover:bg-[var(--color-colorOpacity)]"
         >
           {t("global:projects.showMore")}
         </Link>
