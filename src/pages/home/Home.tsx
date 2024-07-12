@@ -22,7 +22,7 @@ export default function Home() {
 
           <div className="w-full flex flex-col items-center gap-8">
             <p
-              className="text-center text-2xl md:text-5xl text-[var(--color-primary)]" tabIndex={3}>
+              className="text-center text-2xl md:text-5xl text-[var(--color-primary-first)]" tabIndex={3}>
               {dataProfile.fullname}
             </p>
 
@@ -67,14 +67,14 @@ export default function Home() {
 
               {dataProfile.skills &&
                 <section className="w-full flex flex-col gap-2 items-center md:items-start">
-                  <p className="text-[var(--color-secondary)] text-base md:text-2xl text-center" tabIndex={9}>
+                  <p className="text-[var(--color-secondary-first)] text-base md:text-2xl text-center" tabIndex={9}>
                     {t("global:homePage.skills.title")}
                   </p>
 
                   <article className="w-4/6 md:w-full flex flex-col items-start gap-6">
                     {Object.entries(dataProfile.skills).map(([titleStack, stack], index) => (
                       <div className="flex items-center flex-wrap gap-x-4 gap-y-1" key={titleStack + index}>
-                        <p className="text-[var(--color-primary)] text-md md:text-xl" tabIndex={10}>
+                        <p className="text-[var(--color-primary-first)] text-md md:text-xl" tabIndex={10}>
                           {t(`global:homePage.skills.${titleStack}`)}:
                         </p>
                         {stack.map((tech, stackindex) => (
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="w-full flex flex-col gap-8 justify-center">
             {dataProfile.aboutMe &&
               <section className="w-full flex flex-col gap-2">
-                <p className="text-[var(--color-secondary)] text-base md:text-2xl text-center" tabIndex={11}>{t("global:homePage.aboutMe")}</p>
+                <p className="text-[var(--color-secondary-first)] text-base md:text-2xl text-center" tabIndex={11}>{t("global:homePage.aboutMe")}</p>
                 {dataProfile.aboutMe?.map((_, pIndex) => (
                   <p className="indent-8 text-base md:text-xl text-left" key={pIndex} tabIndex={12}>{t(`profile:aboutMe.${pIndex}`)}</p>
                 ))}
@@ -102,7 +102,7 @@ export default function Home() {
 
             {dataProfile.hobbies &&
               <section className="w-full flex flex-col gap-2">
-                <p className="text-[var(--color-secondary)] text-base md:text-2xl text-center" tabIndex={13}>{t("global:homePage.hobbies")}</p>
+                <p className="text-[var(--color-secondary-first)] text-base md:text-2xl text-center" tabIndex={13}>{t("global:homePage.hobbies")}</p>
                 {dataProfile.hobbies?.map((_, pIndex) => (
                   <p className="indent-8 text-base md:text-xl text-left" key={pIndex} tabIndex={14}>{t(`profile:hobbies.${pIndex}`)}</p>
                 ))}
