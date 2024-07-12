@@ -1,35 +1,26 @@
 export const darkThemeColors = {
   primary: {
-    extraLight: "#ffdd8b",
-    light: '#ffd750',
-    DEFAULT: "#ffcc50",
-    dark: "#cca340",
+    first: "#ffcc50",
+    second: '#ffd750',
+    third: "#cca340",
   },
   secondary: {
-    light: '#89c4f3',
-    DEFAULT: '#2196f3',
-    dark: '#145c96',
-    both: "#2196f3"
-  },
-  background: {
-    extraLight: "#374151",
-    light: "#0e192b",
-    DEFAULT: "#1f2937",
-    dark: "#0c1523",
-    both: "#060e1c",
-  },
-  text: {
-    light: '#fffaf4',
-    DEFAULT: '#f1e1cf',
-    dark: '#e2ceb8',
-    both: "#f1e1cf",
-    complementary: "#ffcc50",
+    DEFAULT: "#2196f3",
   },
   border: {
-    light: '#637591',
-    DEFAULT: '#ffcc50',
-    dark: '#3F4F6A',
-    complementary: "#2196f3"
+    first: "#ffd750",
+    second: "#2196f3",
+  },
+  text: {
+    first: "#f1e1cf",
+    second: "#fffaf4",
+    third: "#f1e1cf"
+  },
+  background: {
+    first: "#0c1523",
+    second: "#122138",
+    third: "#1f2937",
+    fourth: "#060e1c"
   },
   error: {
     text: "#f2634a"
@@ -54,36 +45,27 @@ export const darkThemeColors = {
 
 export const lightThemeColors = {
   primary: {
-    extraLight: "#c7e5fd",
-    light: '#89c4f3',
-    DEFAULT: '#2196f3',
-    dark: '#145c96',
+    first: "#2196f3",
+    second: '#89c4f3',
+    third: "#0d3c63",
   },
   secondary: {
-    light: '#125389',
-    DEFAULT: '#145c96',
-    dark: '#0d3c63',
-    both: "#2196f3"
-  },
-  background: {
-    extraLight: "#f5faff",
-    light: '#f5faff',
-    DEFAULT: '#d6e7fa',
-    dark: '#ecf4fd',
-    both: "#060e1c",
-  },
-  text: {
-    light: '#314567',
-    DEFAULT: '#16202f',
-    dark: '#060e1c',
-    both: "#f1e1cf",
-    complementary: "#145c96",
+    DEFAULT: "#145c96",
   },
   border: {
-    light: '#637591',
-    DEFAULT: '#145c96',
-    dark: '#3F4F6A',
-    complementary: "#145c96"
+    first: "#0d3c63",
+    second: "#2196f3",
+  },
+  text: {
+    first: "#16202f",
+    second: "#314567",
+    third: "#f5faff"
+  },
+  background: {
+    first: "#ecf4fd",
+    second: "#f5faff",
+    third: "#d6e7fa",
+    fourth: "#060e1c"
   },
   error: {
     text: "#ef4444"
