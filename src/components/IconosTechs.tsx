@@ -6,7 +6,7 @@ interface IconosTechsProps {
   color?: string;
 }
 
-const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text)]" }: IconosTechsProps) => {
+const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text-first)]" }: IconosTechsProps) => {
   const [icono, setIcono] = useState<React.ReactNode>();
   const [iconoSize, setIconoSize] = useState<React.ReactNode>();
 
