@@ -82,7 +82,7 @@ export default function Project() {
 
               {
                 project.livePreviewLink ? (
-                  <ButtonCustom type='viewDemo'  link={project.livePreviewLink} tabIndex={4} />
+                  <ButtonCustom type='viewDemo' link={project.livePreviewLink} tabIndex={4} />
                 ) : project.linkGithub ? (
                   <ButtonCustom type='viewRepository' link={project.linkGithub} tabIndex={4} />
                 ) : null
