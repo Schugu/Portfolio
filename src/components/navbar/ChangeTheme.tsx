@@ -42,7 +42,7 @@ export default function ChangeTheme({ tabIndex }: { tabIndex: number }) {
     >
       <span
         aria-hidden='true'
-        className={`w-6 h-6 md:w-7 md:h-7 hover:text-[var(--color-primary)]
+        className={`w-6 h-6 md:w-7 md:h-7 hover:text-[var(--color-primary-first)]
           ${theme === 'light'
             ? 'icon-[tdesign--mode-light]'
             : 'icon-[tdesign--mode-dark] '}
