@@ -22,10 +22,10 @@ export default function SelectResolution({ children, onClick, device, resolution
     <section
       className={`flex flex-col items-center justify-end p-2 
         rounded border-2 cursor-pointer select-none
-        transition-colors duration-100 ease-in-out 
-        hover:border-[var(--color-primary)] hover:shadow-[var(--color-primary)] hover:bg-[var(--color-colorOpacity)] 
+        hoverAnimation
+        hover:border-[var(--color-primary-first)] hover:shadow-[var(--color-primary-first)] hover:bg-[var(--color-colorOpacity)] 
         ${device === resolution
-          ? 'border-[var(--color-primary)] shadow-[var(--color-primary)] bg-[var(--color-colorOpacity)]'
+          ? 'border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] bg-[var(--color-colorOpacity)]'
           : 'border-[var(--color-colorOpacity)] '}`
       }
       onClick={onClick}
