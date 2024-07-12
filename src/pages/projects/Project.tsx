@@ -7,8 +7,7 @@ import Tooltip from "@/components/tooltip/Tooltip.tsx";
 import { useProfile } from "@/context/ProfileContext.tsx";
 import { useTranslation } from 'react-i18next';
 import { ProjectType } from '@/types/ProfileContextTypes.ts';
-import ViewRepository from "@/components/buttons/ViewRepository.tsx";
-import ViewDemo from "@/components/buttons/ViewDemo.tsx";
+import ButtonCustom from "@/components/buttons/ButtonCustom.tsx";
 import ImgModal from "@/components/ImgModal.tsx"
 import SkeletonUniversal from "@/components/SkeletonUniversal.tsx";
 
@@ -83,9 +82,9 @@ export default function Project() {
 
               {
                 project.livePreviewLink ? (
-                  <ViewDemo link={project.livePreviewLink} tabIndex={4} />
+                  <ButtonCustom type='viewDemo'  link={project.livePreviewLink} tabIndex={4} />
                 ) : project.linkGithub ? (
-                  <ViewRepository link={project.linkGithub} tabIndex={4} />
+                  <ButtonCustom type='viewRepository' link={project.linkGithub} tabIndex={4} />
                 ) : null
               }
             </div>
@@ -111,7 +110,7 @@ export default function Project() {
             </div>
             {
               project.livePreviewLink && project.linkGithub &&
-              (<ViewRepository link={project.linkGithub} tabIndex={10} />)
+              (<ButtonCustom type='viewRepository' link={project.linkGithub} tabIndex={10} />)
             }
           </article>
         </section>
