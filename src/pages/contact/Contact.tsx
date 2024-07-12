@@ -39,7 +39,7 @@ export default function Contact() {
       <section className='flex flex-col md:flex-row gap-2 md:gap-10'>
         <form ref={formRef} onSubmit={onSubmit}
           className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-center order-2 md:order-1
-          text-[var(--color-text-complementary)]">
+          text-[var(--color-form-text)]">
           <section className="w-full flex flex-col gap-1">
             <label
               htmlFor="website-admin"
@@ -153,7 +153,7 @@ export default function Contact() {
 
         <article className='w-full md:w-1/2 flex flex-col items-center gap-2  order-1 md:order-2'>
           <div className='flex flex-col items-center gap-2'>
-            <p className='text-center text-2xl text-[var(--color-primary)]' tabIndex={7}>{t("global:contact.titleText")}</p>
+            <p className='text-center text-2xl text-[var(--color-primary-first)]' tabIndex={7}>{t("global:contact.titleText")}</p>
 
             {loading && <p className='text-center text-xl' tabIndex={8}>{t("global:contact.textLoading")}</p>}
             {!loading && !dataProfile && <p className='text-center text-xl' tabIndex={8}>{t("global:infoNotAvailable")}</p>}
@@ -168,7 +168,7 @@ export default function Contact() {
             }
           </div>
 
-          <span className="w-36 h-36 icon-[tabler--message-chatbot-filled] text-[var(--color-primary)]" />
+          <span className="w-36 h-36 icon-[tabler--message-chatbot-filled] text-[var(--color-primary-first)]" />
         </article>
       </section>
     </SectionCard>
