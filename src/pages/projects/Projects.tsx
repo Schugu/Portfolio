@@ -24,15 +24,15 @@ const Projects: React.FC = () => {
                 ${Object.keys(dataProjects.approaches).length > 1
                   && index === Object.keys(dataProjects.approaches).length - 1
                   ? ""
-                  : "border-b-2 border-[var(--color-primary)]"
+                  : "border-b-2 border-[var(--color-primary-first)]"
                 }
               `}
               key={approach + index}
             >
-              <p className="text-3xl font-bold text-[var(--color-primary)]" tabIndex={3}>{approach}</p>
+              <p className="text-3xl font-bold text-[var(--color-primary-first)]" tabIndex={3}>{approach}</p>
               <section className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-3">
                 {projects.map((project) => (
-                  <Suspense key={"project" + project.id} fallback={<div className="w-full h-72 border-2 border-[var(--color-border)] shadow-[var(--color-border)] bg-[var(--color-colorOpacity)]"></div>}>
+                  <Suspense key={"project" + project.id} fallback={<div className="w-full h-72 border-2 border-[var(--color-border-first)] shadow-[var(--color-border-first)] bg-[var(--color-colorOpacity)]"></div>}>
                     <Card project={project} tabIndex={3} />
                   </Suspense>
                 ))}
