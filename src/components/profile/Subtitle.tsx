@@ -13,7 +13,7 @@ const Subtitle = ({ string, tabIndex }: SubtitleProps) => {
   return (
     <p className="md:min-h-14 flex items-center justify-center px-1 md:px-3 text-center
                     rounded-lg border-2 
-                  border-[var(--color-primary)] shadow-[var(--color-primary)] bg-[var(--color-colorOpacity)]
+                  border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] bg-[var(--color-colorOpacity)]
                   "
       tabIndex={tabIndex}
     >
@@ -38,7 +38,7 @@ const Flag = ({ nationality, tabIndex }: FlagProps) => {
   }, [nationality]);
   return (
     <div className="w-9 h-7 md:w-16 md:h-14 flex place-items-center px-2 rounded-lg border-2 
-                    border-[var(--color-primary)] shadow-[var(--color-primary)] bg-[var(--color-colorOpacity)]
+                    border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] bg-[var(--color-colorOpacity)]
                    "
       tabIndex={tabIndex} aria-label={`${t("global:nationality")}: ${nationality}`}
     >
