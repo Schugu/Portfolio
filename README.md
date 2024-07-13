@@ -1,12 +1,21 @@
 <h1 align='center'>🌟 Portfolio 💼🖥️🌟</h1>
 
-> Práctica de TypeScript, React, Tailwind CSS. ✨
+> Hecho con TypeScript, React, Tailwind CSS. ✨
 
-🎯 **Objetivo:** Desarrollar una aplicación Portfolio para mostrar proyectos personales.
+🎯 Este proyecto fue desarrollado para servir como un segundo currículum, mostrando mis proyectos personales. También se ofrece como una plantilla para que otros puedan usarla, siempre y cuando se me reconozca como el autor original y se respeten mis derechos de autor.
 
-Este proyecto ha sido desarrollado con el objetivo de exhibir mis proyectos personales. No obstante, también se proporciona como una plantilla que puede ser utilizada por otros para mostrar sus propios trabajos, bajo la condición de que se me mencione como el autor original y se respeten mis derechos de autor.
+## Índice
+1. [Descripción](#descripción)
+2. [Instalación y ejecución del proyecto (React) 🛠️💻](#instalación-y-ejecución-del-proyecto-react-🛠️💻)
+3. [Usar este proyecto como template 📄](#usar-este-proyecto-como-template-📄)
+4. [Contribuir](#contribuir)
+5. [Autores](#autores)
+6. [Agradecimientos](#agradecimientos)
 
-### Instalación y ejecución del proyecto (React) 🛠️💻
+## Descripción
+Breve introducción sobre el proyecto y sus objetivos.
+
+## Instalación y ejecución del proyecto (React) 🛠️💻
 
 1. Abre la consola en la ubicación deseada para clonar el repositorio.
 
@@ -22,7 +31,7 @@ Este proyecto ha sido desarrollado con el objetivo de exhibir mis proyectos pers
     cd Portfolio
     ```
 
-4. Instala las dependencias del front end utilizando npm o yarn:
+4. Instala las dependencias del frontend utilizando npm o yarn:
 
     ```bash
     npm install
@@ -42,71 +51,86 @@ Este proyecto ha sido desarrollado con el objetivo de exhibir mis proyectos pers
 
 Para personalizar y comprender el proyecto, sigue estas instrucciones:
 
-- Si deseas modificar o entender cómo funciona el proyecto, revisa los archivos y carpetas dentro de `src`. 
-    - La lógica y la apariencia de las páginas se encuentran en la carpeta `pages`.
-    - Los componentes individuales se encuentran en la carpeta `components`.
-    - El sistema de rutas se encuentra en el archivo `App.tsx`.
+- Si deseas modificar o entender cómo funciona el proyecto, revisa los archivos y carpetas dentro de `src`.
+  - La lógica y la apariencia de las páginas se encuentran en la carpeta `pages`.
+  - Los componentes individuales se encuentran en la carpeta `components`.
+  - El sistema de rutas se encuentra en el archivo `App.tsx`.
 
-
-<br><br>
 ## Usar este proyecto como template 📄
-Es importante respetar el nombre de las variables, así como el nombre y la ubicación de los archivos para garantizar el correcto funcionamiento del proyecto. Los cambios en estos aspectos pueden causar errores en el código y afectar la funcionalidad del proyecto en su conjunto. Mantener una consistencia en la nomenclatura y la organización de los archivos facilita la comprensión y el mantenimiento del código, además de evitar posibles conflictos y confusiones durante el desarrollo.
 
+Es importante respetar el nombre de las variables, así como el nombre y la ubicación de los archivos para garantizar el correcto funcionamiento del proyecto. Los cambios en estos aspectos pueden causar errores en el código y afectar la funcionalidad del proyecto en su conjunto. Mantener una consistencia en la nomenclatura y la organización de los archivos facilita la comprensión y el mantenimiento del código, además de evitar posibles conflictos y confusiones durante el desarrollo.
 
 ### Personalización del perfil 🧑‍💻
 
-He creado un archivo que se puede editar para agregar información personalizada al portafolio. Este archivo se encuentra en la carpeta `data` y se llama `dataProfile.ts`. A continuación se muestra un ejemplo genérico de cómo debería estructurarse este archivo para que puedas incluir tu propia información:
+He creado un archivo que se puede editar para agregar información personalizada al portafolio. Este archivo se encuentra en la carpeta `translations/es` y se llama `profile.json`. A continuación se muestra un ejemplo genérico de cómo debería estructurarse este archivo para que puedas incluir tu propia información:
 
-```typescript
-interface Profile {
-  fullname: string;
-  dev: string;
-  years: string;
-  nationality: string;
-  linksSocialNetworks: {
-    github: string;
-    linkedin: string;
-    instagram: string;
-    freecodecamp: string;
-    email: string;
-    cv: string;
-  };
-  skills: {
-    stack: string[];
-
-  };
-  profilePicture: string;
+```json
+{
+  "fullname": "Nombre Completo",
+  "aboutMe": [
+    "Breve descripción sobre ti, tus habilidades y tu experiencia."
+  ],
+  "hobbies": [
+    "Hobby 1, Hobby 2, Hobby 3"
+  ],
+  "titles": [
+    "Título Profesional, Cargo, Área de Especialización"
+  ],
+  "years": "Edad",
+  "nationality": "Nacionalidad",
+  "profilePicture": "/ruta/a/profilePicture.png",
+  "linksSocialNetworks": {
+    "Github": "https://github.com/usuario",
+    "Linkedin": "https://www.linkedin.com/in/usuario/",
+    "Instagram": "https://www.instagram.com/usuario/",
+    "FreeCodeCamp": "https://www.freecodecamp.org/certification/usuario/responsive-web-design",
+    "Email": "mailto:usuario@example.com",
+    "CV": "/ruta/al/cv.pdf"
+  },
+  "skills": {
+    "Área de Especialización": [
+      "Habilidad 1",
+      "Habilidad 2",
+      "Habilidad 3"
+    ],
+  },
+  "workExperience": [
+    {
+      "title": "Puesto",
+      "company": "Empresa",
+      "date": "Fecha de inicio - Fecha de fin / Actualidad",
+      "modality": "Modalidad de trabajo",
+      "workplace": "Lugar de trabajo",
+      "country": "País",
+      "description": [
+        "Breve descripción de las tareas y responsabilidades."
+      ],
+      "tasks": [
+        "Tarea 1",
+        "Tarea 2"
+      ],
+      "infoLink": "Enlace opcional adicional"
+    },
+  ],
+  "certificates": [
+    "Link certicicado 1",
+	"Link certicicado 1"
+  ],
+  "textContact": [
+    "Mensaje de contacto para posibles empleadores o colaboradores."
+  ]
 }
-
-const dataProfile: Profile = {
-  fullname: 'Tu Nombre Completo',
-  dev: 'Tu Rol de Desarrollador',
-  years: 'Tu Edad',
-  nationality: 'Tu Nacionalidad',
-  linksSocialNetworks: {
-    github: "https://github.com/tu-usuario",
-    linkedin: "https://www.linkedin.com/in/tu-perfil/",
-    instagram: "https://www.instagram.com/tu-usuario/",
-    freecodecamp: "https://www.freecodecamp.org/tu-usuario",
-    email: "mailto:tu-email@ejemplo.com",
-    cv: "/profile/CV.pdf"
-  },
-  skills: {
-    stack: ['tech1', 'tech2'],
-  },
-  profilePicture: 'fotoDePerfil.png'
-};
-
-export default dataProfile;
 ```
-
-También debes reemplazar estos archivos. Si deseas cambiarles el nombre, asegúrate de hacerlo primero en el archivo `dataProfile.ts`.
+También debes reemplazar estos archivos. Si deseas cambiarles el nombre, asegúrate de hacerlo primero en el archivo `profile.json`.
 ```
 public
 └── profile
     ├── CV.pdf
-    └── fotoDePerfil.png
+    └── profilePicture.png
 ```
+
+
+
 
 ### Personalización del Proyectos 🚀
 
