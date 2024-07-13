@@ -125,7 +125,8 @@ public
     ├── CV.pdf
     └── profilePicture.png
 ```
-
+> [!IMPORTANT] 
+> Si no se encuentran los iconos de las redes sociales, la bandera de tu país o los iconos de los programas, pueden ocurrir dos cosas: o bien están mal escritos (verifica cómo están escritos en el componente), o directamente no están disponibles. En este último caso, agrega los iconos necesarios desde la página  [Yesicon](https://yesicon.app "Yesicon"). Los componentes que deben editarse están ubicados en la carpeta `components` y se llaman `Flag.tsx`, `IconosTechs.tsx`, `SkeletonUniversal.tsx`, `Techs.tsx` y `subtitle.tsx`, ubicado en `components/profile/subtitle.tsx`.
 
 
 
