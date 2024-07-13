@@ -6,16 +6,14 @@
 
 ## Índice
 1. [Descripción](#descripción)
-2. [Instalación y ejecución del proyecto (React) 🛠️💻](#instalación-y-ejecución-del-proyecto-react-🛠️💻)
-3. [Usar este proyecto como template 📄](#usar-este-proyecto-como-template-📄)
+2. [Instalación y ejecución del proyecto (React) 🛠️💻](#install)
+3. [Usar este proyecto como template 📄](#projectTemplate)
 4. [Contribuir](#contribuir)
 5. [Autores](#autores)
 6. [Agradecimientos](#agradecimientos)
 
-## Descripción
-Breve introducción sobre el proyecto y sus objetivos.
 
-## Instalación y ejecución del proyecto (React) 🛠️💻
+<h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
 
 1. Abre la consola en la ubicación deseada para clonar el repositorio.
 
@@ -56,8 +54,7 @@ Para personalizar y comprender el proyecto, sigue estas instrucciones:
   - Los componentes individuales se encuentran en la carpeta `components`.
   - El sistema de rutas se encuentra en el archivo `App.tsx`.
 
-## Usar este proyecto como template 📄
-
+<h2 id="projectTemplate">Usar este proyecto como template 📄</h2> 
 Es importante respetar el nombre de las variables, así como el nombre y la ubicación de los archivos para garantizar el correcto funcionamiento del proyecto. Los cambios en estos aspectos pueden causar errores en el código y afectar la funcionalidad del proyecto en su conjunto. Mantener una consistencia en la nomenclatura y la organización de los archivos facilita la comprensión y el mantenimiento del código, además de evitar posibles conflictos y confusiones durante el desarrollo.
 
 ### Personalización del perfil 🧑‍💻
