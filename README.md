@@ -325,7 +325,8 @@ export const lightThemeColors = {
   primaryOpacity: "#2196f318"
 };
 ```
-
+> [!WARNING]
+> No cambies los nombres de las variables (keys), ya que causará problemas y no se verán los colores deseados.
 
 
 
