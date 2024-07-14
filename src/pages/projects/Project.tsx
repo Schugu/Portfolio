@@ -90,7 +90,7 @@ export default function Project() {
             </div>
 
             <div className='w-full flex flex-col gap-6'>
-              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border-first)] mb-2" tabIndex={5}>{project.title}</p>
+              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border-first)] mb-2 pb-2" tabIndex={5}>{project.title}</p>
               <p tabIndex={6} className="indent-8 text-lg md:text-xl">{t(`projects:approaches.${project.approach}.${projectIndex}.description`)}</p>
 
               {project.moreInfo.map((_, pIndex) => (
