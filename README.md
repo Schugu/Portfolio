@@ -229,6 +229,15 @@ Recuerda que, si deseas añadir varias capturas de pantalla, debes especificar c
 1. [@nicolasboattini](https://github.com/nicolasboattini "@nicolasboattini"): Aportó verificando las traducciones al portugués brasileño de la página, ideas de diseño y svg´s que no existen en la página de iconos.
 
 
+<h2 id='contribuir'>Contribuir</h2>
+
+Guía para los desarrolladores que deseen contribuir al proyecto.
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz un commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
 
 
 
