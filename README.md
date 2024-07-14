@@ -10,10 +10,10 @@
 	- [Personalización del perfil 🧑‍💻](#profileTemplate)
 	- [Personalización del Proyectos 🚀](#projectTemplate)
   	- [Personalización de la página 🎨](#pageTemplate)
+   	- [Personalización de idiomas 🌐](#translatesTemplate)
 3. [Contribuir](#contribuir)
 4. [Contribuyentes](#contribuyentes)
 5. [Agradecimientos](#agradecimientos)
-
 
 <h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
 
@@ -329,6 +329,16 @@ export const lightThemeColors = {
 > No cambies los nombres de las variables (keys), ya que causará problemas y no se verán los colores deseados.
 
 
+<h3 id="translatesTemplate">Personalización de idiomas 🌐</h3> 
+<p>Esta página utiliza un sistema de idiomas para públicos de distintos países. Si deseas modificar alguna traducción, puedes hacerlo en la carpeta <code>translates</code>. Dentro de esta carpeta, encontrarás la carpeta <code>es</code>, donde se depositan los archivos utilizados por defecto. Estos archivos son:</p>
+<ol>
+  <li><code>global.json</code>: Aquí encontrarás traducciones de la interfaz de la página, es decir, botones, títulos, etc.</li>
+  <li><code>profile.json</code>: Aquí estará tu información personal.</li>
+  <li><code>projects.json</code>: Aquí estará la información de tus proyectos.</li>
+</ol>
+
+>[!CAUTION]
+>No cambies los nombres de las variables (keys), ya que causará problemas y no se verán las traducciones deseadas.
 
 
 
