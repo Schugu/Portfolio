@@ -11,6 +11,7 @@
   ],
   "years": "23 years old",
   "nationality": "Argentina",
+  "profilePicture": "/profile/profilePicture.png",
   "linksSocialNetworks": {
     "Github": "https://github.com/Schugu",
     "Linkedin": "https://www.linkedin.com/in/leandrodanielschugurensky/",
@@ -47,7 +48,6 @@
       "Visual Studio Code"
     ]
   },
-  "profilePicture": "/profile/fotoDePerfil.png",
   "workExperience": [
     {
       "title": "Administrative",
