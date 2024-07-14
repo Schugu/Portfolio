@@ -11,9 +11,10 @@
 	- [Personalización del Proyectos 🚀](#projectTemplate)
   	- [Personalización de la página 🎨](#pageTemplate)
    	- [Personalización de idiomas 🌐](#translatesTemplate)
-3. [Contribuir](#contribuir)
-4. [Contribuyentes](#contribuyentes)
-5. [Agradecimientos](#agradecimientos)
+3. [Dependencias📦](#dependencias)
+4. [Contribuir](#contribuir)
+6. [Contribuyentes](#contribuyentes)
+7. [Agradecimientos](#agradecimientos)
 
 <h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
 
@@ -383,6 +384,51 @@ fetch('/src/translations/es/profile.json').then(response => response.json()),
 fetch('/src/translations/es/projects.json').then(response => response.json())
 ```
 
+ 
+<h3 id="dependencias">Dependencias📦 </h3> 
+
+Este proyecto utiliza varias dependencias para diferentes propósitos, incluyendo gestión de formularios, internacionalización, enrutamiento y más. A continuación se describe cada una de las dependencias utilizadas:
+
+### Dependencias de Producción
+
+- **@emailjs/browser**: Biblioteca para enviar correos electrónicos directamente desde el navegador usando EmailJS.
+- **@types/node**: Tipos para Node.js que proporcionan soporte de TypeScript para las APIs de Node.js.
+- **i18next**: Framework de internacionalización para JavaScript, utilizado para gestionar las traducciones en la aplicación.
+- **js-cookie**: Librería para gestionar cookies de manera sencilla en JavaScript.
+- **react**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **react-dom**: Paquete que proporciona métodos específicos del DOM que se utilizan en la mayoría de las aplicaciones de React.
+- **react-hook-form**: Biblioteca para gestionar formularios en React de manera eficiente.
+- **react-i18next**: Biblioteca de integración de i18next para React, utilizada para internacionalización.
+- **react-router-dom**: Biblioteca para el enrutamiento en aplicaciones de React.
+- **react-select**: Componente de selección para React con soporte para múltiples opciones, búsqueda y más.
+
+### Dependencias de Desarrollo
+
+- **@iconify/json**: Colección de iconos en formato JSON utilizada con Iconify.
+- **@iconify/tailwind**: Complemento de Tailwind CSS para utilizar Iconify.
+- **@types/js-cookie**: Tipos para la librería js-cookie, proporcionando soporte de TypeScript.
+- **@types/react**: Tipos para React, proporcionando soporte de TypeScript para React.
+- **@types/react-dom**: Tipos para ReactDOM, proporcionando soporte de TypeScript para ReactDOM.
+- **@typescript-eslint/eslint-plugin**: Plugin ESLint para TypeScript, proporcionando reglas específicas para TypeScript.
+- **@typescript-eslint/parser**: Parser ESLint para TypeScript.
+- **@vitejs/plugin-react-swc**: Plugin de Vite para transformar y optimizar React usando SWC.
+- **autoprefixer**: Plugin de PostCSS para añadir prefijos de navegador automáticamente.
+- **eslint**: Herramienta de linting para identificar y reportar patrones problemáticos en el código.
+- **eslint-plugin-react-hooks**: Plugin ESLint para reglas de los hooks de React.
+- **eslint-plugin-react-refresh**: Plugin ESLint para la integración de React Refresh.
+- **postcss**: Herramienta para transformar CSS con plugins de JavaScript.
+- **tailwindcss**: Framework de CSS utilitario para un desarrollo rápido de interfaces de usuario.
+- **typescript**: Lenguaje de programación tipado que se compila a JavaScript.
+- **vite**: Herramienta de construcción rápida para proyectos de frontend.
+
+### Scripts
+
+- **dev**: Inicia el servidor de desarrollo de Vite.
+- **build**: Compila el proyecto TypeScript y construye los archivos de producción con Vite.
+- **lint**: Ejecuta ESLint en los archivos .ts y .tsx, reportando errores y advertencias.
+- **preview**: Inicia un servidor para previsualizar la construcción de producción.
+
+Cada una de estas dependencias y scripts ayuda a mantener y construir el proyecto de manera eficiente y organizada.
 
 <h2 id='contribuyentes'>Contribuyentes</h2>
 
