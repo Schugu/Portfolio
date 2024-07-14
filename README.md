@@ -216,7 +216,7 @@ Recuerda que, si deseas añadir varias capturas de pantalla, debes especificar c
 
 
 > [!TIP]
->** Agregar Nuevos Campos**
+> **Agregar Nuevos Campos**
 > - Para agregar nuevos campos dentro de una sección existente, como `aboutMe`, `hobbies`, `certificates`, etc., sigue este formato:
 >   - **Campos Simples:** Para agregar un nuevo campo simple, como una cadena de texto, agrégalo dentro de su sección correspondiente separado por comas y entre comillas dobles.
 >   - **Campos de Listas:** Si el campo es una lista de elementos, como `hobbies` o `certificates`, simplemente agrega el nuevo elemento como una nueva cadena dentro del array.
