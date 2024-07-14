@@ -14,7 +14,7 @@
 3. [Dependencias📦](#dependencias)
 4. [Contribuir](#contribuir)
 6. [Contribuyentes](#contribuyentes)
-7. [Agradecimientos](#agradecimientos)
+7. [Ayuda 🤝](#ayuda)
 
 <h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
 
@@ -443,6 +443,10 @@ Guía para los desarrolladores que deseen contribuir al proyecto.
 3. Realiza tus cambios y haz un commit (`git commit -am 'Añadir nueva funcionalidad'`).
 4. Sube tus cambios a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
+
+<h2 id="ayuda">Ayuda 🤝</h2>
+<p>Si no entiendes cómo funciona algo, o tienes problemas, puedes contactarme para ayudarte.</p>
+
 
 
 
