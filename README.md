@@ -340,6 +340,48 @@ export const lightThemeColors = {
 >[!CAUTION]
 >No cambies los nombres de las variables (keys), ya que causará problemas y no se verán las traducciones deseadas.
 
+#### Agregar un nuevo idioma
+Si deseas agregar un nuevo idioma, agrega una carpeta con las siglas de tu idioma en minúscula en la carpeta `translations`. Por ejemplo, ya están creadas las carpetas de Inglés (en), Español (es) y Portugués (pt). Una vez creada la carpeta, debes crear tres archivos llamados: `global.json`, `profile.json` y `projects.json`. Estos deben tener la misma estructura que los archivos de los otros idiomas. Una vez agregados los archivos, dirígete a `/utils`, al archivo `i18n.ts`, e importa los archivos del nuevo idioma. Debes importar los archivos usando el nombre del archivo más un guión bajo y las siglas del idioma. Por ejemplo:
+
+```typescript
+import global_es from "@/translations/es/global.json";
+```
+
+Luego, debes agregar tu idioma siguiendo ese patrón:
+```typescript
+resources: {
+      es: {
+        global: global_es,
+        profile: profile_es,
+        projects: projects_es,
+      },
+      en: {
+        global: global_en,
+        profile: profile_en,
+        projects: projects_en,
+      },
+      pt: {
+        global: global_pt,
+        profile: profile_pt,
+        projects: projects_pt,
+      }
+    }
+```
+
+El idioma predeterminado es el Español (es), es decir, que toda la información que forma la página se basa en los archivos de la carpeta es, y después se aplican las traducciones. Si quieres cambiarlo, debes editar las siguientes líneas de código con las siglas del idioma que deseas en estos archivos:
+
+`/utils/i18n`
+```typescript
+const savedLanguage = localStorage.getItem('language') || 'es';
+
+fallbackLng: 'es',
+```
+
+`/context/profileContext.tsx`
+```typescript
+fetch('/src/translations/es/profile.json').then(response => response.json()),
+fetch('/src/translations/es/projects.json').then(response => response.json())
+```
 
 
 <h2 id='contribuyentes'>Contribuyentes</h2>
