@@ -125,7 +125,18 @@ public
     ├── CV.pdf
     └── profilePicture.png
 ```
+
+> [!TIP]
+> Agregar Nuevos Campos
+> - Para agregar nuevos campos dentro de una sección existente, como aboutMe, hobbies, certificates, etc., sigue este formato:
+> 	- Campos Simples: Para agregar un nuevo campo simple, como una cadena de texto, agrégalo dentro de su sección correspondiente separado por comas y entre comillas dobles.
+> 	- Campos de Listas: Si el campo es una lista de elementos, como hobbies o certificates, simplemente agrega el nuevo elemento como una nueva cadena dentro del array.
+> - Agregar Nuevas Secciones u Objetos
+> 	-  Para agregar una nueva sección o un nuevo objeto, como workExperience o skills, crea un nuevo objeto dentro del JSON. Cada sección debe ser un objeto separado dentro de su array correspondiente, siguiendo la estructura definida por la interfaz ProfileType.
+
 > [!IMPORTANT] 
+> Posibles problemas con iconos
+> 
 > Si no se encuentran los iconos de las redes sociales, la bandera de tu país o los iconos de los programas, pueden ocurrir dos cosas: o bien están mal escritos (verifica cómo están escritos en el componente), o directamente no están disponibles. En este último caso, agrega los iconos necesarios desde la página  [Yesicon](https://yesicon.app "Yesicon"). Los componentes que deben editarse están ubicados en la carpeta `components` y se llaman `Flag.tsx`, `IconosTechs.tsx`, `SkeletonUniversal.tsx`, `Techs.tsx` y `subtitle.tsx`, ubicado en `components/profile/subtitle.tsx`.
 
 
