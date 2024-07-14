@@ -100,9 +100,9 @@
         ],
         "linkGithub": "https://github.com/Schugu/portfolio",
         "cantScreenshots": {
-          "cellphone": 6,
+          "cellphone": 0,
           "tablet": 0,
-          "desktop": 5
+          "desktop": 6
         }
       }
     ]

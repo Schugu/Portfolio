@@ -9,7 +9,15 @@
           "This project idea is based on a previous project where I learned to create a user system with MongoDB database and CRUD operations.",
           "This application allows you to register and log in with your credentials, with validations both on the frontend and backend. Once logged in, it takes you to the dashboard, where you can add incomes and record expenses. The income system simulates the action of receiving money, allowing you to specify the amount and title of the transaction. Similarly, in the expense system, you can record your expenditures, indicating the amount and a brief description. Both systems have validations on the frontend and perform the corresponding calculation to keep the balance updated. It is important to note that this application is purely for practical and learning purposes, so it is not as specific or complex as a real financial application."
         ],
-        "techs": ["JavaScript", "React", "Tailwind", "Node.js", "Express.js", "MongoDB", "Firebase"],
+        "techs": [
+          "JavaScript",
+          "React",
+          "Tailwind",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Firebase"
+        ],
         "linkGithub": "https://github.com/Schugu/BalanceApp",
         "cantScreenshots": {
           "cellphone": 7,
@@ -27,7 +35,11 @@
           "The application connects to SWAPI to fetch information about the 6 Star Wars films. A landing page is created that allows navigation between the sections of films and characters. The films page displays the name, generic image, and episode number of each film. For the film detail page, additional information such as the director and a list of related characters is shown. The characters page displays the name, generic image, eye color, and gender of each character, with pagination or infinite scroll options. Filters by eye color and gender are implemented and applied to all characters. Finally, a character detail page is created that shows detailed information, omitting properties with 'n/a' or 'unknown' values.",
           "The application uses Tailwind CSS for styles and Next.js for web development, meeting the established requirements. It leverages the API provided by Next.js and is developed in JavaScript. Navigation between pages is done through the framework's routing system. SWAPI data is adapted to the required view without using its library. Additionally, the application is responsive as an added feature."
         ],
-        "techs": ["JavaScript", "Next.js", "Tailwind"],
+        "techs": [
+          "JavaScript",
+          "Next.js",
+          "Tailwind"
+        ],
         "linkGithub": "https://github.com/Schugu/prueba-tecnica-neowyze",
         "cantScreenshots": {
           "cellphone": 6,
@@ -42,7 +54,12 @@
         "moreInfo": [
           "This project idea is inspired by the video 'Subscriptions Tracker - Suscripciones App - Streaming - React Js - JavaScript - ECMA6' by Black code. Although I followed the idea presented in the video, I developed this page my way, adding my own approaches and customizations."
         ],
-        "techs": ["HTML", "CSS", "JavaScript", "React"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React"
+        ],
         "linkGithub": "https://github.com/Schugu/SubscriptionsTracker",
         "cantScreenshots": {
           "cellphone": 3,
@@ -57,7 +74,11 @@
         "moreInfo": [
           "Offers an accessible and understandable introduction to the Braille tactile reading system, allowing those who can see to acquire knowledge about this valuable communication method. Through educational and practical resources, this page provides the opportunity to explore and understand Braille, thereby promoting the inclusion of blind people."
         ],
-        "techs": ["HTML", "CSS", "JavaScript"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
         "linkGithub": "https://github.com/Schugu/BraillePage",
         "cantScreenshots": {
           "cellphone": 6,
@@ -72,12 +93,16 @@
         "moreInfo": [
           "This project has been developed with the aim of showcasing my personal projects. However, it is also provided as a template that can be used by others to showcase their own work, provided that I am credited as the original author and my copyrights are respected."
         ],
-        "techs": ["TypeScript", "React", "Tailwind"],
+        "techs": [
+          "TypeScript",
+          "React",
+          "Tailwind"
+        ],
         "linkGithub": "https://github.com/Schugu/portfolio",
         "cantScreenshots": {
-          "cellphone": 6,
+          "cellphone": 0,
           "tablet": 0,
-          "desktop": 5
+          "desktop": 6
         }
       }
     ]
