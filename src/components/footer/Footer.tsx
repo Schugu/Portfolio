@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useTranslation('global');
 
   return (
-    <footer className="w-full min-h-10 p-2 gap-2 flex flex-wrap items-center justify-end  
+    <footer className="w-full min-h-10 px-8 py-2 gap-2 flex flex-wrap items-center justify-end  
     bg-[var(--color-background-first)] text-[var(--color-text-first)]">
       <div className='flex gap-2 items-center text-lg justify-center' tabIndex={999999}>
         <p className="text-center">{t("global:footer.template1")}</p>
