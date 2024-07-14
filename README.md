@@ -10,7 +10,7 @@
 	- [Personalización del perfil 🧑‍💻](#profileTemplate)
 	- [Personalización del Proyectos 🚀](#projectTemplate)
 3. [Contribuir](#contribuir)
-4. [Autores](#autores)
+4. [Contribuyentes](#contribuyentes)
 5. [Agradecimientos](#agradecimientos)
 
 
@@ -221,6 +221,15 @@ Recuerda que, si deseas añadir varias capturas de pantalla, debes especificar c
 
 > [!IMPORTANT]
 > Si no se encuentran los iconos de las redes sociales, la bandera de tu país o los iconos de los programas, pueden ocurrir dos cosas: o bien están mal escritos (verifica cómo están escritos en el componente), o directamente no están disponibles. En este último caso, agrega los iconos necesarios desde la página  [Yesicon](https://yesicon.app "Yesicon"). Los componentes que deben editarse están ubicados en la carpeta `components` y se llaman `Flag.tsx`, `IconosTechs.tsx`, `SkeletonUniversal.tsx`, `Techs.tsx` y `subtitle.tsx`, ubicado en `components/profile/subtitle.tsx`.
+
+
+
+<h2 id='contribuyentes'>Contribuyentes</h2>
+
+1. [@nicolasboattini](https://github.com/nicolasboattini "@nicolasboattini"): Aportó traducciones, ideas de diseño y svg´s que no existen en la página de iconos.
+
+
+
 
 
 
