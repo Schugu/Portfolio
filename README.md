@@ -225,7 +225,10 @@ Recuerda que, si deseas añadir varias capturas de pantalla, debes especificar c
 
 
 <h3 id="pageTemplate">Personalización de la página 🎨 </h3> 
-He creado un archivo que se puede editar para cambiar los colores de la página. Este archivo se encuentra en la carpeta `/context` y se llama `colorPalettes.ts`. A continuación se muestra un ejemplo genérico de cómo está estructurado este archivo para que puedas incluir tus propios colores:
+He creado un archivo que se puede editar para cambiar los colores de la página. Este archivo se encuentra en la carpeta `/context` y se llama `colorPalettes.ts`. A continuación se muestra un ejemplo genérico de cómo está estructurado este archivo para que puedas incluir tus propios colores
+
+> [!TIP]
+> Los colores pueden tener cualquier formato, hex, hsl, o rgb.
 
 ```TypeScript
 export const darkThemeColors = {
