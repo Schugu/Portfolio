@@ -226,7 +226,7 @@ Recuerda que, si deseas añadir varias capturas de pantalla, debes especificar c
 
 <h2 id='contribuyentes'>Contribuyentes</h2>
 
-1. [@nicolasboattini](https://github.com/nicolasboattini "@nicolasboattini"): Aportó traducciones, ideas de diseño y svg´s que no existen en la página de iconos.
+1. [@nicolasboattini](https://github.com/nicolasboattini "@nicolasboattini"): Aportó verificando las traducciones al portugués brasileño de la página, ideas de diseño y svg´s que no existen en la página de iconos.
 
 
 
