@@ -11,9 +11,9 @@
 	- [Personalización del Proyectos 🚀](#projectTemplate)
   	- [Personalización de la página 🎨](#pageTemplate)
    	- [Personalización de idiomas 🌐](#translatesTemplate)
-3. [Dependencias📦](#dependencias)
-4. [Contribuir](#contribuir)
-6. [Contribuyentes](#contribuyentes)
+3. [Dependencias 📦](#dependencias)
+4. [Contribuir 💡](#contribuir)
+6. [Contribuyentes 🧑‍🤝‍🧑](#contribuyentes)
 7. [Ayuda 🤝](#ayuda)
 
 <h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
@@ -430,12 +430,12 @@ Este proyecto utiliza varias dependencias para diferentes propósitos, incluyend
 
 Cada una de estas dependencias y scripts ayuda a mantener y construir el proyecto de manera eficiente y organizada.
 
-<h2 id='contribuyentes'>Contribuyentes</h2>
+<h2 id='contribuyentes'>Contribuyentes 🧑‍🤝‍🧑</h2>
 
 1. [@nicolasboattini](https://github.com/nicolasboattini "@nicolasboattini"): Aportó verificando las traducciones al portugués brasileño de la página, ideas de diseño y svg´s que no existen en la página de iconos.
 
 
-<h2 id='contribuir'>Contribuir</h2>
+<h2 id='contribuir'>Contribuir 💡</h2>
 
 Guía para los desarrolladores que deseen contribuir al proyecto.
 1. Haz un fork del repositorio.
