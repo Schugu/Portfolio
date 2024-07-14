@@ -15,6 +15,7 @@
 4. [Contribuir 💡](#contribuir)
 6. [Contribuyentes 🧑‍🤝‍🧑](#contribuyentes)
 7. [Ayuda 🤝](#ayuda)
+8. [Capturas de pantalla 📸](#screenshots)
 
 <h2 id="install">Instalación y ejecución del proyecto (React) 🛠️💻</h2> 
 
@@ -452,7 +453,8 @@ Guía para los desarrolladores que deseen contribuir al proyecto.
 
 
 
-## Capturas de pantalla 📸
+
+<h2 id="screenshots">Capturas de pantalla 📸</h2> 
 
 <img src="/public/screenshotsPage/1.png" alt="Captura de pantalla1"/>
 <img src="/public/screenshotsPage/2.png" alt="Captura de pantalla2"/>
