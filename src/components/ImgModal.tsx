@@ -88,7 +88,7 @@ const ImgModal: React.FC<ImgModalProps> = ({ children }) => {
             </div>
             <div className="flex justify-center items-center h-full" onClick={handleOutsideClick}>
               <img
-                className="select-none max-w-full max-h-full object-contain border-2 border-[var(--color-border-second)] rounded"
+                className="select-none max-w-full max-h-full object-contain border-2 border-[var(--color-border-first)] rounded"
                 src={modalData.imgUrl}
                 alt="Imagen Ampliada"
               />

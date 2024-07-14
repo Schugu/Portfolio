@@ -29,7 +29,7 @@ export default function Education() {
                   className="w-full">
                   <img
                     className='transform hover:scale-110 transition duration-300 cursor-pointer
-                    border-2 border-[var(--color-border-second)] rounded overflow-hidden'
+                    border-2 border-[var(--color-border-first)] rounded overflow-hidden'
                     src={`/profile/education/${index + 1}.jpg`}
                     alt={t("global:projects.screenshot") + (index + 1)} tabIndex={4} 
                   />
