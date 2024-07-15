@@ -38,19 +38,19 @@ const TimelineItem = ({ work, index, tabIndex }: TimelineItemProps) => {
           </span>
           <article className="w-full md:w-5/12 flex flex-col gap-2">
 
-            <p className="text-2xl font-bold text-[var(--color-secondary-first)]" tabIndex={tabIndex}>
+            <p className="text-xl md:text-2xl font-bold text-[var(--color-secondary-first)]" tabIndex={tabIndex}>
               {t(`profile:workExperience.${index}.title`)}
             </p>
 
-            <time className="italic text-base font-normal leading-none text-[var(--color-text-first)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.date`)}</time>
+            <time className="italic text-sm md:text-base font-normal leading-none text-[var(--color-text-first)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.date`)}</time>
 
             {
               work.company &&
-              <p className="text-lg font-medium text-[var(--color-text-second)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.company`)}</p>
+              <p className="text-base md:text-lg font-medium text-[var(--color-text-second)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.company`)}</p>
             }
 
             <div className="flex items-center gap-2 text-[--color-primary-first]">
-              <p className="italic" tabIndex={tabIndex}>
+              <p className="italic text-sm md:text-base" tabIndex={tabIndex}>
                 {t(`profile:workExperience.${index}.modality`)} - {t(`profile:workExperience.${index}.workplace`)}.
               </p>
 
@@ -62,17 +62,17 @@ const TimelineItem = ({ work, index, tabIndex }: TimelineItemProps) => {
           <article className="w-full md:w-7/12 flex flex-col gap-6">
             {
               work.description.map((_, pIndex) => (
-                <p key={"work" + index + pIndex} className="max-w-[75ch] text-xl font-medium text-[var(--color-text-second)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.description.${pIndex}`)}</p>
+                <p key={"work" + index + pIndex} className="max-w-[75ch] text-base md:text-xl font-medium text-[var(--color-text-second)]" tabIndex={tabIndex}>{t(`profile:workExperience.${index}.description.${pIndex}`)}</p>
               ))
             }
             {
               work.tasks && (
                 <div className="flex flex-col gap-1">
-                  <p className="text-xl font-semibold text-[var(--color-primary-first)]" tabIndex={tabIndex}>{t("global:workExperience.tasks")}</p>
+                  <p className="text-base md:text-xl font-semibold text-[var(--color-primary-first)]" tabIndex={tabIndex}>{t("global:workExperience.tasks")}</p>
                   <ol className="w-full list-inside list-disc">
                     {work.tasks.map((_, taskIndex) => (
                       <li key={"work" + index + taskIndex} className="text-[var(--color-primary-first)]" tabIndex={tabIndex}>
-                        <p className="max-w-[75ch] inline italic text-lg font-normal text-[var(--color-text-first)]">
+                        <p className="max-w-[75ch] inline italic text-sm md:text-lg font-normal text-[var(--color-text-first)]">
                           {t(`profile:workExperience.${index}.tasks.${taskIndex}`)}
                         </p>
                       </li>
