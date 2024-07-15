@@ -67,7 +67,7 @@ export default function Project() {
     <SectionCard sectionTitle={`${t("global:projects.section")}["${project?.title ?? t("global:projects.projectNotFound")}"]`}>
       <div className="w-full h-full flex flex-col gap-2 p-2">
         <section className="w-full flex flex-wrap justify-center gap-4 p-4 rounded-lg bg-[var(--color-background-third)]">
-          <article className='w-full flex flex-col'>
+          <article className='w-full flex flex-col gap-6'>
             <div className="w-full flex justify-between items-center">
               <Tooltip text={t("global:projects.back")} position='right'>
                 <Link to='/projects'
@@ -90,11 +90,11 @@ export default function Project() {
             </div>
 
             <div className='w-full flex flex-col gap-6'>
-              <p className="w-full text-center text-xl md:text-3xl border-b-2 border-[var(--color-border-first)] mb-2 pb-2" tabIndex={5}>{project.title}</p>
-              <p tabIndex={6} className="indent-8 text-lg md:text-xl">{t(`projects:approaches.${project.approach}.${projectIndex}.description`)}</p>
+              <p className="w-full text-center text-xl md:text-3xl font-bold text-[var(--color-primary-first)] border-b-2 border-[var(--color-border-first)] pb-2" tabIndex={5}>{project.title}</p>
+              <p tabIndex={6} className="indent-8 text-base md:text-lg">{t(`projects:approaches.${project.approach}.${projectIndex}.description`)}</p>
 
               {project.moreInfo.map((_, pIndex) => (
-                <p tabIndex={7} key={pIndex} className='indent-8 text-base md:text-xl'>
+                <p tabIndex={7} key={pIndex} className='indent-8 text-base md:text-lg'>
                   {t(`projects:approaches.${project.approach}.${projectIndex}.moreInfo.${pIndex}`)}
                 </p>
               ))}
@@ -102,7 +102,7 @@ export default function Project() {
           </article>
 
           <article className='w-full flex flex-col items-center gap-4'>
-            <p tabIndex={8} className="w-full text-center text-xl md:text-2xl text-[var(--color-primary-first)]">{t("global:projects.technologies")}:</p>
+            <p tabIndex={8} className="w-full text-center italic text-xl md:text-3xl text-[var(--color-primary-first)]">{t("global:projects.technologies")}:</p>
             <div className="flex gap-2 flex-wrap justify-center">
               {project.techs.map((tech) => (
                 <Techs key={tech} tech={tech} tabIndex={9} />
@@ -117,26 +117,26 @@ export default function Project() {
 
         {(project.cantScreenshots.cellphone > 0 || project.cantScreenshots.tablet > 0 || project.cantScreenshots.desktop > 0) && (
           <section className='w-full flex flex-col gap-4 items-center'>
-            <p tabIndex={11} className='text-xl md:text-2xl'>{t("global:projects.screenshots")}:</p>
+            <p tabIndex={11} className='text-lg md:text-2xl'>{t("global:projects.screenshots")}:</p>
             <article className='flex justify-center flex-wrap gap-6'>
               {project.cantScreenshots.desktop > 0 &&
                 <SelectResolution onClick={() => setDevice('desktop')} device={device} resolution="desktop" tabIndex={12}>
-                  <span className="w-16 h-10 icon-[ion--ios-desktop]" />
-                  <p>{t("global:projects.device.desktop")}</p>
+                  <span className="w-8 h-5 md:w-16 md:h-10 icon-[ion--ios-desktop]" />
+                  <p className='text-center text-sm md:text-xl'>{t("global:projects.device.desktop")}</p>
                 </SelectResolution>
               }
 
               {project.cantScreenshots.tablet > 0 &&
                 <SelectResolution onClick={() => setDevice('tablet')} device={device} resolution="tablet" tabIndex={12}>
-                  <span className="w-9 h-9 icon-[ion--tablet-portrait-sharp]" />
-                  <p>{t("global:projects.device.tablet")}</p>
+                  <span className="w-4 h-4 md:w-9 md:h-9 icon-[ion--tablet-portrait-sharp]" />
+                  <p className='text-center text-sm md:text-xl'>{t("global:projects.device.tablet")}</p>
                 </SelectResolution>
               }
 
               {project.cantScreenshots.cellphone > 0 &&
                 <SelectResolution onClick={() => setDevice('cellphone')} device={device} resolution="cellphone" tabIndex={12}>
-                  <span className="w-9 h-9 icon-[ion--phone-portrait-sharp]" />
-                  <p>{t("global:projects.device.cellphone")}</p>
+                  <span className="w-4 h-4 md:w-9 md:h-9 icon-[ion--phone-portrait-sharp]" />
+                  <p className='text-center text-sm md:text-xl'>{t("global:projects.device.cellphone")}</p>
                 </SelectResolution>
               }
             </article>
