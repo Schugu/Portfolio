@@ -29,8 +29,8 @@ const Projects: React.FC = () => {
               `}
               key={approach + index}
             >
-              <p className="text-3xl font-bold text-[var(--color-primary-first)]" tabIndex={3}>{approach}</p>
-              <section className="w-full gap-[4vw] grid grid-cols-2 sm:grid-cols-3">
+              <p className="text-lg md:text-3xl font-bold text-[var(--color-primary-first)]" tabIndex={3}>{approach}</p>
+              <section className="w-full gap-[4vw] grid grid-cols-1 sm:grid-cols-3">
                 {projects.map((project) => (
                   <Suspense key={"project" + project.id} fallback={<div className="w-full h-72 border-2 border-[var(--color-border-first)] shadow-[var(--color-border-first)] bg-[var(--color-colorOpacity)]"></div>}>
                     <Card project={project} tabIndex={3} />

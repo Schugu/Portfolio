@@ -59,7 +59,7 @@ export default function Card({ project, tabIndex }: CardProps) {
           tabIndex={tabIndex}
           to={`/projects/${project.id}`}
           aria-label={t("global:projects.showMore")}
-          className="flex justify-center items-center text-xl p-1 rounded-2xl w-1/2 border-2 shadow hoverAnimation
+          className="flex justify-center items-center text-base md:text-xl py-0.5 md:p-1 rounded-2xl w-1/2 border-2 shadow hoverAnimation
           border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] hover:bg-[var(--color-colorOpacity)]"
         >
           {t("global:projects.showMore")}
