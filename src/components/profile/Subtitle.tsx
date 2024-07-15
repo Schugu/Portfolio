@@ -11,7 +11,7 @@ interface FlagProps {
 }
 const Subtitle = ({ string, tabIndex }: SubtitleProps) => {
   return (
-    <p className="md:min-h-14 flex items-center justify-center px-1 md:px-3 text-center
+    <p className="md:min-h-14 flex items-center justify-center px-3 text-center
                     rounded-lg border-2 
                   border-[var(--color-primary-first)] shadow-[var(--color-primary-first)] bg-[var(--color-colorOpacity)]
                   "

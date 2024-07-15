@@ -16,7 +16,7 @@ export default function SectionCard({ sectionTitle, children }: SectionCardProps
 
         <TagOpen section={sectionTitle} />
 
-        <div className="flex w-full gap-2">
+        <div className="flex w-full md:gap-2">
           <section className="w-full flex flex-col gap-3 py-2 md:py-2 md:pl-[5vw]">
 
             {children}
