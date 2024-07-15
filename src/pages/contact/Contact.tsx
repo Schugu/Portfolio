@@ -153,7 +153,7 @@ export default function Contact() {
 
         <article className='w-full md:w-1/2 flex flex-col items-center gap-2  order-1 md:order-2'>
           <div className='flex flex-col items-center gap-2'>
-            <p className='text-center text-2xl text-[var(--color-primary-first)]' tabIndex={7}>{t("global:contact.titleText")}</p>
+            <p className='text-center text-lg md:text-2xl text-[var(--color-primary-first)]' tabIndex={7}>{t("global:contact.titleText")}</p>
 
             {loading && <p className='text-center text-xl' tabIndex={8}>{t("global:contact.textLoading")}</p>}
             {!loading && !dataProfile && <p className='text-center text-xl' tabIndex={8}>{t("global:infoNotAvailable")}</p>}
@@ -161,14 +161,14 @@ export default function Contact() {
             {
               !loading && dataProfile && (
                 dataProfile.textContact?.map((_, index) => (
-                  <p className='text-center md:text-left text-balance text-xl' key={"paragraph" + index} tabIndex={9}>
+                  <p className='text-center md:text-left text-balance text-sm md:text-xl' key={"paragraph" + index} tabIndex={9}>
                     {t(`profile:textContact.${index}`)}
                   </p>
                 )))
             }
           </div>
 
-          <span className="w-36 h-36 icon-[tabler--message-chatbot-filled] text-[var(--color-primary-first)]" />
+          <span className="w-16 h-16 md:w-36 md:h-36 icon-[tabler--message-chatbot-filled] text-[var(--color-primary-first)]" />
         </article>
       </section>
     </SectionCard>
