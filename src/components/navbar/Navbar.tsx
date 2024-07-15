@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full min-h-12 p-2 gap-2 
-     flex flex-wrap items-center justify-between lg:justify-around
+     flex md:flex-wrap items-center justify-between lg:justify-around
      bg-[var(--color-background-first)] text-[var(--color-text-first)]">
 
       <p tabIndex={1} className="text-center text-sm md:text-xl text-[var(--color-primary-first)]">{dataProfile?.fullname ?? t("global:navbar.nameNotAvailable")}</p>
