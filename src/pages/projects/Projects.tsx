@@ -20,11 +20,10 @@ const Projects: React.FC = () => {
           {Object.entries(dataProjects.approaches).map(([approach, projects], index) => (
             projects.length > 0 &&
             <div
-              className={`flex flex-col gap-4 pb-12 
-                ${Object.keys(dataProjects.approaches).length > 1
-                  && index === Object.keys(dataProjects.approaches).length - 1
-                  ? ""
-                  : "border-b-2 border-[var(--color-primary-first)]"
+              className={`flex flex-col gap-4 pb-12
+                ${Object.keys(dataProjects.approaches).length > 1 && index < Object.keys(dataProjects.approaches).length - 1
+                  ? "border-b-2 border-[var(--color-primary-first)]"
+                  : ""
                 }
               `}
               key={approach + index}
