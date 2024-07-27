@@ -184,6 +184,15 @@ const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text-first)]" 
         setIconoSize('w-4 h-4 md:w-8 md:h-8');
         setIcono(<span className={`w-full h-full icon-[mdi--eslint]`}></span>);
         break
+      case 'postman':
+        setIconoSize('w-4 h-4 md:w-8 md:h-8');
+        setIcono(<span className={`w-full h-full icon-[simple-icons--postman]`}></span>);
+        break
+      case 'thunder client':
+        setIconoSize('w-5 h-5 md:w-7 md:h-7');
+        setIcono(
+          <svg className={`w-full h-full ${color}`} fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M11.24,17.97c-.6,0-1.2-.01-1.8,0-.55.01-.98-.18-1.24-.67-.27-.5-.14-.95.16-1.4,1.8-2.66,3.59-5.32,5.38-7.99.69-1.03,1.38-2.06,2.08-3.09.45-.67,1.03-.9,1.63-.66.59.23.83.8.73,1.61-.27,2.22-.53,4.44-.8,6.66-.05.42.04.59.5.58,1.49-.03,2.98,0,4.48-.01.59,0,1.12.11,1.43.68.31.58.08,1.07-.26,1.55-2.79,3.97-5.56,7.94-8.35,11.91-.55.78-1.21.98-1.84.57-.49-.32-.62-.8-.56-1.35.27-2.51.53-5.03.81-7.54.09-.85.11-.85-.74-.85-.54,0-1.08,0-1.62,0Z" /><path d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM16,29.85c-7.65,0-13.85-6.2-13.85-13.85S8.35,2.15,16,2.15s13.85,6.2,13.85,13.85-6.2,13.85-13.85,13.85Z" /></svg>)
+        break
 
       default:
         setIconoSize('w-5 h-5 md:w-8 md:h-8');
@@ -193,8 +202,8 @@ const IconosTechs = ({ tech, tabIndex, color = "text-[var(--color-text-first)]" 
 
   return (
     <div
-      tabIndex={tabIndex} aria-label={`${tech}`}
-      className={`flex items-center justify-center ${iconoSize} ${color}`}
+      tabIndex={tabIndex} aria-label={`${tech} `}
+      className={`flex items - center justify - center ${iconoSize} ${color} `}
     >
       {icono}
     </div>
