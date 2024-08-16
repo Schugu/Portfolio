@@ -1,5 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { ProfileType, ProjectsType } from "@/types/ProfileContextTypes";
+import profileData from '@/translations/es/profile.json';
+import projectsData from '@/translations/es/projects.json';
 
 interface CombinedData {
   dataProfile: ProfileType | null;
@@ -29,23 +31,11 @@ export const ProfileProvider: React.FC<ProfileProviderProps> = ({ children }) =>
   });
 
   useEffect(() => {
-    Promise.all([
-      fetch('/src/translations/es/profile.json').then(response => response.json()),
-      fetch('/src/translations/es/projects.json').then(response => response.json())
-    ])
-      .then(([dataProfile, dataProjects]) => {
-        // Simulación de retraso para mostrar indicador de carga
-        // setTimeout(() => {
-        setCombinedData({
-          dataProfile,
-          dataProjects,
-          loading: false,
-        });
-        // }, 2000); 
-      })
-      .catch(error => {
-        console.error('Error fetching profile and project data:', error);
-      });
+    setCombinedData({
+      dataProfile: profileData,
+      dataProjects: projectsData,
+      loading: false,
+    });
   }, []);
 
   return (
