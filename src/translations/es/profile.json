@@ -42,7 +42,9 @@
       "Google Suite",
       "Microsoft Office",
       "NPM",
-      "ESLint"
+      "ESLint",
+      "Postman",
+      "Thunder Client"
     ],
     "ides": [
       "Visual Studio Code"

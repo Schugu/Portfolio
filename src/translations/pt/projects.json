@@ -75,15 +75,16 @@
           "Oferece uma introdução acessível e compreensível ao sistema de leitura tátil Braille, permitindo que aqueles que podem ver adquiram conhecimentos sobre este valioso método de comunicação. Através de recursos educativos e práticos, esta página oferece a oportunidade de explorar e compreender o Braille, promovendo assim a inclusão das pessoas cegas."
         ],
         "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
+          "React",
+          "Tailwind",
+          "TypeScript"
         ],
         "linkGithub": "https://github.com/Schugu/BraillePage",
+        "livePreviewLink": "https://braillepage.netlify.app",
         "cantScreenshots": {
           "cellphone": 6,
-          "tablet": 4,
-          "desktop": 5
+          "tablet": 6,
+          "desktop": 6
         }
       },
       {

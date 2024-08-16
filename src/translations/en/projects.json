@@ -41,6 +41,7 @@
           "Tailwind"
         ],
         "linkGithub": "https://github.com/Schugu/prueba-tecnica-neowyze",
+        "livePreviewLink": "https://braillepage.netlify.app",
         "cantScreenshots": {
           "cellphone": 6,
           "tablet": 6,
@@ -75,15 +76,16 @@
           "Offers an accessible and understandable introduction to the Braille tactile reading system, allowing those who can see to acquire knowledge about this valuable communication method. Through educational and practical resources, this page provides the opportunity to explore and understand Braille, thereby promoting the inclusion of blind people."
         ],
         "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
+          "React",
+          "Tailwind",
+          "TypeScript"
         ],
         "linkGithub": "https://github.com/Schugu/BraillePage",
+        "livePreviewLink": "https://braillepage.netlify.app",
         "cantScreenshots": {
           "cellphone": 6,
-          "tablet": 4,
-          "desktop": 5
+          "tablet": 6,
+          "desktop": 6
         }
       },
       {
