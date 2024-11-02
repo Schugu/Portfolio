@@ -1,13 +1,13 @@
 {
   "fullname": "Leandro Daniel Schugurensky",
   "aboutMe": [
-    "Hello everyone! I'm Leandro Daniel Schugurensky, 23 years old, with experience in administrative roles. I specialize in technical tasks and as a Front-End developer, with expertise in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I also have experience with Git and GitHub for version control, and I've worked with databases like MongoDB and Firebase. I use tools such as Google Suite and Microsoft Office for document management and creation, and NPM for Node.js package management. I also implement ESLint to ensure code quality in my projects. I am committed to continuous learning and constantly improving my skills as a developer, always aiming to create robust and efficient web applications."
+    "I am passionate about technology and the continuous development of my skills. I strive to improve every day, adapting to new tools and methodologies, always with the goal of creating efficient and functional solutions. I am excited about the opportunities ahead of me and ready to continue growing in the field of web development."
   ],
   "hobbies": [
     "I enjoy going to the gym to stay active and fit. I also love outdoor walks, especially in nature. I'm passionate about reading, exploring various topics to keep learning, and I'm a Marvel universe fanatic, enjoying its movies and series."
   ],
   "titles": [
-    "Front-End Developer"
+    "Full-Stack Developer"
   ],
   "years": "23 years old",
   "nationality": "Argentina",
@@ -30,7 +30,12 @@
       "Next.js",
       "Tailwind"
     ],
+    "backEnd": [
+      "Node.js",
+      "Express.js"
+    ],
     "dataBase": [
+      "MySQL",
       "MongoDB",
       "Firebase"
     ],
